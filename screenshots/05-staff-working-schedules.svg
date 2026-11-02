@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" style="background:#f8fafc; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-  <rect x="0" y="0" width="1200" height="780" fill="#f8fafc"/>
-  <rect x="30" y="25" width="1140" height="730" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="drop-shadow(0 10px 25px rgba(0,0,0,0.06))"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" style="background:#f1f5f9; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <rect x="0" y="0" width="1200" height="800" fill="#f1f5f9"/>
+  <rect x="30" y="25" width="1140" height="750" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="drop-shadow(0 10px 25px rgba(0,0,0,0.06))"/>
   
   <circle cx="60" cy="60" r="6" fill="#ef4444"/>
   <circle cx="80" cy="60" r="6" fill="#f59e0b"/>

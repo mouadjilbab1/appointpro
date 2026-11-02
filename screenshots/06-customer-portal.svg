@@ -1,63 +1,177 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" width="1000" height="750" style="background:#f1f5f9; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-  <rect x="50" y="30" width="900" height="690" rx="14" fill="#ffffff" stroke="#e2e8f0" filter="drop-shadow(0 15px 30px rgba(0,0,0,0.08))"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" style="background:#f1f5f9; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <!-- Background Canvas -->
+  <rect x="0" y="0" width="1200" height="800" fill="#f1f5f9"/>
+
+  <!-- Browser Window Frame -->
+  <rect x="30" y="25" width="1140" height="750" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="drop-shadow(0 15px 35px rgba(0,0,0,0.06))"/>
   
-  <!-- Browser Header -->
-  <rect x="50" y="30" width="900" height="50" rx="14 14 0 0" fill="#f8fafc" stroke="#e2e8f0"/>
-  <circle cx="80" cy="55" r="5" fill="#ef4444"/>
-  <circle cx="96" cy="55" r="5" fill="#f59e0b"/>
-  <circle cx="112" cy="55" r="5" fill="#10b981"/>
-  <rect x="220" y="42" width="560" height="26" rx="6" fill="#ffffff" stroke="#e2e8f0"/>
-  <text x="360" y="59" font-size="12" fill="#64748b">🔒 https://yourdomain.com/my-account/appointments</text>
+  <!-- Browser Window Header -->
+  <path d="M 30 41 A 16 16 0 0 1 46 25 L 1154 25 A 16 16 0 0 1 1170 41 L 1170 75 L 30 75 Z" fill="#f8fafc"/>
+  <line x1="30" y1="75" x2="1170" y2="75" stroke="#e2e8f0" stroke-width="1.5"/>
+  <circle cx="60" cy="50" r="6" fill="#ef4444"/>
+  <circle cx="80" cy="50" r="6" fill="#f59e0b"/>
+  <circle cx="100" cy="50" r="6" fill="#10b981"/>
   
-  <!-- Portal Container -->
-  <rect x="100" y="110" width="800" height="570" rx="12" fill="#ffffff"/>
-  
-  <text x="100" y="150" font-size="22" font-weight="700" fill="#0f172a">Client Appointment Portal</text>
-  <text x="100" y="175" font-size="13" fill="#64748b">Welcome back, Elena Rostova! Manage your scheduled sessions, download receipts, or reschedule.</text>
-  
-  <!-- Appointments Table -->
-  <rect x="100" y="210" width="800" height="420" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
-  
-  <!-- Table Header -->
-  <rect x="100" y="210" width="800" height="40" rx="8 8 0 0" fill="#f8fafc"/>
-  <line x1="100" y1="250" x2="900" y2="250" stroke="#e2e8f0"/>
-  <text x="120" y="235" font-size="11" font-weight="700" fill="#64748b">REFERENCE</text>
-  <text x="240" y="235" font-size="11" font-weight="700" fill="#64748b">SERVICE</text>
-  <text x="440" y="235" font-size="11" font-weight="700" fill="#64748b">SPECIALIST</text>
-  <text x="580" y="235" font-size="11" font-weight="700" fill="#64748b">DATE &amp; TIME</text>
-  <text x="720" y="235" font-size="11" font-weight="700" fill="#64748b">STATUS</text>
-  <text x="810" y="235" font-size="11" font-weight="700" fill="#64748b">ACTIONS</text>
-  
-  <!-- Row 1 -->
-  <line x1="100" y1="310" x2="900" y2="310" stroke="#f1f5f9"/>
-  <text x="120" y="285" font-size="13" font-weight="700" fill="#4f46e5">AP-892415</text>
-  <text x="240" y="285" font-size="13" font-weight="600" fill="#0f172a">Master Executive Haircut</text>
-  <text x="440" y="285" font-size="13" fill="#334155">Sarah Jenkins</text>
-  <text x="580" y="285" font-size="13" fill="#334155">Nov 15, 10:00 AM</text>
-  <rect x="715" y="271" width="70" height="22" rx="11" fill="#ecfdf5"/>
-  <text x="725" y="286" font-size="11" font-weight="600" fill="#065f46">Confirmed</text>
-  <rect x="805" y="270" width="75" height="26" rx="5" fill="#fef2f2" stroke="#fca5a5"/>
-  <text x="825" y="287" font-size="11" font-weight="600" fill="#dc2626">Cancel</text>
-  
-  <!-- Row 2 -->
-  <line x1="100" y1="370" x2="900" y2="370" stroke="#f1f5f9"/>
-  <text x="120" y="345" font-size="13" font-weight="700" fill="#4f46e5">AP-712044</text>
-  <text x="240" y="345" font-size="13" font-weight="600" fill="#0f172a">Deep Tissue Massage</text>
-  <text x="440" y="345" font-size="13" fill="#334155">David Miller</text>
-  <text x="580" y="345" font-size="13" fill="#334155">Nov 28, 02:00 PM</text>
-  <rect x="715" y="331" width="70" height="22" rx="11" fill="#ecfdf5"/>
-  <text x="725" y="346" font-size="11" font-weight="600" fill="#065f46">Confirmed</text>
-  <rect x="805" y="330" width="75" height="26" rx="5" fill="#fef2f2" stroke="#fca5a5"/>
-  <text x="825" y="347" font-size="11" font-weight="600" fill="#dc2626">Cancel</text>
-  
-  <!-- Row 3 (Past Completed) -->
-  <line x1="100" y1="430" x2="900" y2="430" stroke="#f1f5f9"/>
-  <text x="120" y="405" font-size="13" font-weight="700" fill="#64748b">AP-194021</text>
-  <text x="240" y="405" font-size="13" fill="#64748b">Aromatherapy Relaxation</text>
-  <text x="440" y="405" font-size="13" fill="#64748b">David Miller</text>
-  <text x="580" y="405" font-size="13" fill="#64748b">Oct 12, 11:30 AM</text>
-  <rect x="715" y="391" width="70" height="22" rx="11" fill="#f1f5f9"/>
-  <text x="722" y="406" font-size="11" font-weight="600" fill="#475569">Completed</text>
-  <rect x="805" y="390" width="75" height="26" rx="5" fill="#f1f5f9"/>
-  <text x="820" y="407" font-size="11" font-weight="600" fill="#334155">Receipt</text>
+  <!-- URL Address Bar -->
+  <rect x="250" y="37" width="700" height="26" rx="6" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="490" y="54" font-size="12" fill="#64748b">🔒 https://yourwebsite.com/my-account/appointments</text>
+
+  <!-- Portal Header with Profile Card -->
+  <g transform="translate(60, 105)">
+    <!-- Avatar Circle -->
+    <circle cx="35" cy="35" r="35" fill="#e0e7ff"/>
+    <text x="21" y="44" font-size="24" font-weight="700" fill="#4f46e5">ER</text>
+
+    <!-- Client Info -->
+    <text x="85" y="30" font-size="20" font-weight="800" fill="#0f172a">Elena Rostova</text>
+    <text x="85" y="50" font-size="13" fill="#64748b">Verified Customer • Member since March 2024 • elena.rostova@example.com</text>
+
+    <!-- Top Right Action -->
+    <rect x="910" y="15" width="170" height="40" rx="8" fill="#4f46e5"/>
+    <text x="932" y="40" font-size="13" font-weight="700" fill="#ffffff">+ Book New Session</text>
+  </g>
+
+  <!-- Quick Stats Cards Row -->
+  <g transform="translate(60, 195)">
+    <!-- Stat 1 -->
+    <rect x="0" y="0" width="345" height="85" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="45" cy="42" r="22" fill="#eef2ff"/>
+    <text x="37" y="48" font-size="18">📅</text>
+    <text x="85" y="35" font-size="11" font-weight="700" fill="#64748b">UPCOMING BOOKINGS</text>
+    <text x="85" y="62" font-size="22" font-weight="800" fill="#4f46e5">2 Appointments</text>
+
+    <!-- Stat 2 -->
+    <rect x="365" y="0" width="345" height="85" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="410" cy="42" r="22" fill="#f0fdf4"/>
+    <text x="402" y="48" font-size="18">✓</text>
+    <text x="450" y="35" font-size="11" font-weight="700" fill="#64748b">COMPLETED SESSIONS</text>
+    <text x="450" y="62" font-size="22" font-weight="800" fill="#10b981">8 Appointments</text>
+
+    <!-- Stat 3 -->
+    <rect x="735" y="0" width="345" height="85" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="780" cy="42" r="22" fill="#fef3c7"/>
+    <text x="772" y="48" font-size="18">💳</text>
+    <text x="820" y="35" font-size="11" font-weight="700" fill="#64748b">TOTAL INVESTED</text>
+    <text x="820" y="62" font-size="22" font-weight="800" fill="#0f172a">$840.00</text>
+  </g>
+
+  <!-- Customer Appointments Table Container -->
+  <g transform="translate(60, 305)">
+    <rect x="0" y="0" width="1080" height="430" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+
+    <!-- Table Top Tabs -->
+    <path d="M 0 12 A 12 12 0 0 1 12 0 L 1068 0 A 12 12 0 0 1 1080 12 L 1080 50 L 0 50 Z" fill="#f8fafc"/>
+    <line x1="0" y1="50" x2="1080" y2="50" stroke="#e2e8f0"/>
+    
+    <text x="25" y="32" font-size="14" font-weight="800" fill="#0f172a">Appointment History</text>
+    
+    <rect x="780" y="10" width="95" height="30" rx="6" fill="#4f46e5"/>
+    <text x="800" y="30" font-size="12" font-weight="700" fill="#ffffff">All (10)</text>
+
+    <rect x="885" y="10" width="100" height="30" rx="6" fill="#f1f5f9"/>
+    <text x="900" y="30" font-size="12" font-weight="600" fill="#64748b">Upcoming (2)</text>
+
+    <!-- Columns Header -->
+    <rect x="0" y="50" width="1080" height="38" fill="#f1f5f9"/>
+    <line x1="0" y1="88" x2="1080" y2="88" stroke="#e2e8f0"/>
+    <text x="25" y="74" font-size="11" font-weight="700" fill="#475569">REFERENCE #</text>
+    <text x="160" y="74" font-size="11" font-weight="700" fill="#475569">SERVICE &amp; LOCATION</text>
+    <text x="440" y="74" font-size="11" font-weight="700" fill="#475569">SPECIALIST</text>
+    <text x="600" y="74" font-size="11" font-weight="700" fill="#475569">DATE &amp; TIME</text>
+    <text x="780" y="74" font-size="11" font-weight="700" fill="#475569">STATUS</text>
+    <text x="930" y="74" font-size="11" font-weight="700" fill="#475569">ACTIONS</text>
+
+    <!-- Row 1 (Upcoming Confirmed) -->
+    <g transform="translate(0, 88)">
+      <text x="25" y="34" font-size="13" font-weight="800" fill="#4f46e5">#AP-9041</text>
+      
+      <text x="160" y="26" font-size="13" font-weight="700" fill="#0f172a">Executive Health Checkup (60m)</text>
+      <text x="160" y="44" font-size="11" fill="#64748b">Downtown Medical Suite</text>
+
+      <text x="440" y="26" font-size="13" font-weight="600" fill="#0f172a">Dr. Alex Rivera</text>
+      <text x="440" y="44" font-size="11" fill="#64748b">Chief Consultant</text>
+
+      <text x="600" y="26" font-size="13" font-weight="700" fill="#0f172a">Tomorrow, 10:30 AM</text>
+      <text x="600" y="44" font-size="11" fill="#10b981">In 18 hours</text>
+
+      <rect x="780" y="18" width="95" height="24" rx="12" fill="#dcfce7"/>
+      <text x="796" y="34" font-size="11" font-weight="700" fill="#15803d">CONFIRMED</text>
+
+      <!-- Action Buttons -->
+      <rect x="910" y="16" width="75" height="28" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+      <text x="920" y="34" font-size="11" font-weight="600" fill="#475569">Reschedule</text>
+
+      <rect x="995" y="16" width="60" height="28" rx="6" fill="#fee2e2"/>
+      <text x="1008" y="34" font-size="11" font-weight="600" fill="#dc2626">Cancel</text>
+
+      <line x1="0" y1="65" x2="1080" y2="65" stroke="#f1f5f9"/>
+    </g>
+
+    <!-- Row 2 (Upcoming Confirmed) -->
+    <g transform="translate(0, 153)">
+      <text x="25" y="34" font-size="13" font-weight="800" fill="#4f46e5">#AP-8840</text>
+      
+      <text x="160" y="26" font-size="13" font-weight="700" fill="#0f172a">Aromatherapy &amp; Spa Therapy (90m)</text>
+      <text x="160" y="44" font-size="11" fill="#64748b">West End Luxury Wellness</text>
+
+      <text x="440" y="26" font-size="13" font-weight="600" fill="#0f172a">Sarah Jenkins</text>
+      <text x="440" y="44" font-size="11" fill="#64748b">Senior Therapist</text>
+
+      <text x="600" y="26" font-size="13" font-weight="700" fill="#0f172a">Nov 14, 02:00 PM</text>
+      <text x="600" y="44" font-size="11" fill="#64748b">Next Friday</text>
+
+      <rect x="780" y="18" width="95" height="24" rx="12" fill="#dcfce7"/>
+      <text x="796" y="34" font-size="11" font-weight="700" fill="#15803d">CONFIRMED</text>
+
+      <rect x="910" y="16" width="75" height="28" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+      <text x="920" y="34" font-size="11" font-weight="600" fill="#475569">Reschedule</text>
+
+      <rect x="995" y="16" width="60" height="28" rx="6" fill="#fee2e2"/>
+      <text x="1008" y="34" font-size="11" font-weight="600" fill="#dc2626">Cancel</text>
+
+      <line x1="0" y1="65" x2="1080" y2="65" stroke="#f1f5f9"/>
+    </g>
+
+    <!-- Row 3 (Past Completed) -->
+    <g transform="translate(0, 218)">
+      <text x="25" y="34" font-size="13" font-weight="800" fill="#64748b">#AP-8412</text>
+      
+      <text x="160" y="26" font-size="13" font-weight="700" fill="#0f172a">Dental Cleaning &amp; Polish (45m)</text>
+      <text x="160" y="44" font-size="11" fill="#64748b">Downtown Dental Suite</text>
+
+      <text x="440" y="26" font-size="13" font-weight="600" fill="#0f172a">Dr. Emily Stone</text>
+      <text x="440" y="44" font-size="11" fill="#64748b">Lead Dentist</text>
+
+      <text x="600" y="26" font-size="13" font-weight="700" fill="#0f172a">Oct 20, 11:00 AM</text>
+      <text x="600" y="44" font-size="11" fill="#64748b">Completed</text>
+
+      <rect x="780" y="18" width="95" height="24" rx="12" fill="#f1f5f9"/>
+      <text x="796" y="34" font-size="11" font-weight="700" fill="#64748b">COMPLETED</text>
+
+      <rect x="910" y="16" width="145" height="28" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="935" y="34" font-size="11" font-weight="600" fill="#4f46e5">📄 Receipt / PDF</text>
+
+      <line x1="0" y1="65" x2="1080" y2="65" stroke="#f1f5f9"/>
+    </g>
+
+    <!-- Row 4 (Past Completed) -->
+    <g transform="translate(0, 283)">
+      <text x="25" y="34" font-size="13" font-weight="800" fill="#64748b">#AP-8201</text>
+      
+      <text x="160" y="26" font-size="13" font-weight="700" fill="#0f172a">Consultation &amp; Follow-up (30m)</text>
+      <text x="160" y="44" font-size="11" fill="#64748b">Downtown Medical Suite</text>
+
+      <text x="440" y="26" font-size="13" font-weight="600" fill="#0f172a">Dr. Alex Rivera</text>
+      <text x="440" y="44" font-size="11" fill="#64748b">Chief Consultant</text>
+
+      <text x="600" y="26" font-size="13" font-weight="700" fill="#0f172a">Sep 28, 04:00 PM</text>
+      <text x="600" y="44" font-size="11" fill="#64748b">Completed</text>
+
+      <rect x="780" y="18" width="95" height="24" rx="12" fill="#f1f5f9"/>
+      <text x="796" y="34" font-size="11" font-weight="700" fill="#64748b">COMPLETED</text>
+
+      <rect x="910" y="16" width="145" height="28" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="935" y="34" font-size="11" font-weight="600" fill="#4f46e5">📄 Receipt / PDF</text>
+    </g>
+  </g>
 </svg>

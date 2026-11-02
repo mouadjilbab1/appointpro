@@ -1,90 +1,206 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 780" width="1000" height="780" style="background:#f1f5f9; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-  <!-- Browser Chrome Preview -->
-  <rect x="50" y="30" width="900" height="720" rx="14" fill="#ffffff" stroke="#e2e8f0" filter="drop-shadow(0 15px 30px rgba(0,0,0,0.08))"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" style="background:#f1f5f9; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <!-- Background Canvas -->
+  <rect x="0" y="0" width="1200" height="800" fill="#f1f5f9"/>
+
+  <!-- Browser Window Frame -->
+  <rect x="30" y="25" width="1140" height="750" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="drop-shadow(0 15px 35px rgba(0,0,0,0.06))"/>
   
-  <!-- Browser Header -->
-  <rect x="50" y="30" width="900" height="50" rx="14 14 0 0" fill="#f8fafc" stroke="#e2e8f0"/>
-  <circle cx="80" cy="55" r="5" fill="#ef4444"/>
-  <circle cx="96" cy="55" r="5" fill="#f59e0b"/>
-  <circle cx="112" cy="55" r="5" fill="#10b981"/>
+  <!-- Browser Window Header -->
+  <path d="M 30 41 A 16 16 0 0 1 46 25 L 1154 25 A 16 16 0 0 1 1170 41 L 1170 75 L 30 75 Z" fill="#f8fafc"/>
+  <line x1="30" y1="75" x2="1170" y2="75" stroke="#e2e8f0" stroke-width="1.5"/>
+  <circle cx="60" cy="50" r="6" fill="#ef4444"/>
+  <circle cx="80" cy="50" r="6" fill="#f59e0b"/>
+  <circle cx="100" cy="50" r="6" fill="#10b981"/>
   
-  <!-- URL Bar -->
-  <rect x="220" y="42" width="560" height="26" rx="6" fill="#ffffff" stroke="#e2e8f0"/>
-  <text x="360" y="59" font-size="12" fill="#64748b">🔒 https://yourdomain.com/book-now</text>
-  
-  <!-- Wizard Container -->
-  <rect x="110" y="110" width="780" height="600" rx="12" fill="#ffffff" stroke="#e2e8f0" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.04))"/>
-  
-  <!-- Step Progress -->
-  <circle cx="180" cy="155" r="16" fill="#4f46e5"/>
-  <text x="175" y="160" font-size="12" font-weight="700" fill="#ffffff">1</text>
-  <text x="162" y="185" font-size="11" font-weight="600" fill="#4f46e5">Service</text>
-  
-  <line x1="205" y1="155" x2="275" y2="155" stroke="#e2e8f0" stroke-width="2"/>
-  <circle cx="300" cy="155" r="16" fill="#f1f5f9" stroke="#cbd5e1"/>
-  <text x="296" y="160" font-size="12" font-weight="700" fill="#64748b">2</text>
-  <text x="286" y="185" font-size="11" fill="#64748b">Staff</text>
-  
-  <line x1="325" y1="155" x2="395" y2="155" stroke="#e2e8f0" stroke-width="2"/>
-  <circle cx="420" cy="155" r="16" fill="#f1f5f9" stroke="#cbd5e1"/>
-  <text x="416" y="160" font-size="12" font-weight="700" fill="#64748b">3</text>
-  <text x="408" y="185" font-size="11" fill="#64748b">Time</text>
-  
-  <line x1="445" y1="155" x2="515" y2="155" stroke="#e2e8f0" stroke-width="2"/>
-  <circle cx="540" cy="155" r="16" fill="#f1f5f9" stroke="#cbd5e1"/>
-  <text x="536" y="160" font-size="12" font-weight="700" fill="#64748b">4</text>
-  <text x="526" y="185" font-size="11" fill="#64748b">Extras</text>
-  
-  <line x1="565" y1="155" x2="635" y2="155" stroke="#e2e8f0" stroke-width="2"/>
-  <circle cx="660" cy="155" r="16" fill="#f1f5f9" stroke="#cbd5e1"/>
-  <text x="656" y="160" font-size="12" font-weight="700" fill="#64748b">5</text>
-  <text x="646" y="185" font-size="11" fill="#64748b">Details</text>
-  
-  <line x1="685" y1="155" x2="755" y2="155" stroke="#e2e8f0" stroke-width="2"/>
-  <circle cx="780" cy="155" r="16" fill="#f1f5f9" stroke="#cbd5e1"/>
-  <text x="776" y="160" font-size="12" font-weight="700" fill="#64748b">6</text>
-  <text x="760" y="185" font-size="11" fill="#64748b">Payment</text>
-  
-  <!-- Step 1 Content Header -->
-  <text x="150" y="235" font-size="20" font-weight="700" fill="#0f172a">Select a Service</text>
-  <text x="150" y="255" font-size="13" fill="#64748b">Please select from our available treatments and consultations:</text>
-  
-  <!-- Category 1 Title -->
-  <text x="150" y="295" font-size="14" font-weight="700" fill="#4f46e5">HAIR &amp; STYLING</text>
-  
-  <!-- Service Card 1 (Selected) -->
-  <rect x="150" y="310" width="335" height="110" rx="10" fill="#f5f3ff" stroke="#4f46e5" stroke-width="2"/>
-  <text x="170" y="340" font-size="15" font-weight="700" fill="#0f172a">Master Executive Haircut</text>
-  <text x="170" y="365" font-size="12" fill="#64748b">Precision cut, shampoo, styling &amp; scalp massage.</text>
-  <text x="170" y="398" font-size="12" font-weight="600" fill="#64748b">⏱ 45 mins</text>
-  <text x="410" y="398" font-size="16" font-weight="700" fill="#4f46e5">$45.00</text>
-  
-  <!-- Service Card 2 -->
-  <rect x="505" y="310" width="335" height="110" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
-  <text x="525" y="340" font-size="15" font-weight="700" fill="#0f172a">Beard Trim &amp; Hot Towel</text>
-  <text x="525" y="365" font-size="12" fill="#64748b">Traditional hot towel shave and beard grooming.</text>
-  <text x="525" y="398" font-size="12" font-weight="600" fill="#64748b">⏱ 30 mins</text>
-  <text x="765" y="398" font-size="16" font-weight="700" fill="#0f172a">$25.00</text>
-  
-  <!-- Category 2 Title -->
-  <text x="150" y="455" font-size="14" font-weight="700" fill="#10b981">WELLNESS &amp; SPA</text>
-  
-  <!-- Service Card 3 -->
-  <rect x="150" y="470" width="335" height="110" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
-  <text x="170" y="500" font-size="15" font-weight="700" fill="#0f172a">Deep Tissue Massage</text>
-  <text x="170" y="525" font-size="12" fill="#64748b">60-minute therapeutic massage with organic oils.</text>
-  <text x="170" y="558" font-size="12" font-weight="600" fill="#64748b">⏱ 60 mins</text>
-  <text x="410" y="558" font-size="16" font-weight="700" fill="#0f172a">$85.00</text>
-  
-  <!-- Service Card 4 -->
-  <rect x="505" y="470" width="335" height="110" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
-  <text x="525" y="500" font-size="15" font-weight="700" fill="#0f172a">Aromatherapy Relaxation</text>
-  <text x="525" y="525" font-size="12" fill="#64748b">Gentle relaxation therapy with custom fragrances.</text>
-  <text x="525" y="558" font-size="12" font-weight="600" fill="#64748b">⏱ 75 mins</text>
-  <text x="765" y="558" font-size="16" font-weight="700" fill="#0f172a">$95.00</text>
-  
-  <!-- Wizard Footer Controls -->
-  <line x1="150" y1="620" x2="840" y2="620" stroke="#f1f5f9"/>
-  <rect x="715" y="640" width="125" height="42" rx="8" fill="#4f46e5"/>
-  <text x="735" y="666" font-size="14" font-weight="600" fill="#ffffff">Continue →</text>
+  <!-- URL Address Bar -->
+  <rect x="250" y="37" width="700" height="26" rx="6" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="500" y="54" font-size="12" fill="#64748b">🔒 https://yourwebsite.com/book-appointment</text>
+
+  <!-- Wizard Title & Subtitle -->
+  <text x="60" y="115" font-size="22" font-weight="800" fill="#0f172a">Online Appointment Booking</text>
+  <text x="60" y="135" font-size="13" fill="#64748b">Select your preferred service, specialist, and time slot in 8 simple steps.</text>
+
+  <!-- 8-Step Progress Stepper -->
+  <g transform="translate(60, 160)">
+    <rect x="0" y="0" width="1080" height="60" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+    
+    <!-- Step 1 Active -->
+    <circle cx="45" cy="30" r="14" fill="#4f46e5"/>
+    <text x="41" y="34" font-size="12" font-weight="700" fill="#ffffff">1</text>
+    <text x="68" y="34" font-size="12" font-weight="700" fill="#4f46e5">Service</text>
+
+    <line x1="125" y1="30" x2="165" y2="30" stroke="#cbd5e1" stroke-width="2"/>
+
+    <!-- Step 2 -->
+    <circle cx="185" cy="30" r="14" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="181" y="34" font-size="12" font-weight="600" fill="#64748b">2</text>
+    <text x="208" y="34" font-size="12" font-weight="500" fill="#64748b">Location</text>
+
+    <line x1="270" y1="30" x2="310" y2="30" stroke="#cbd5e1" stroke-width="2"/>
+
+    <!-- Step 3 -->
+    <circle cx="330" cy="30" r="14" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="326" y="34" font-size="12" font-weight="600" fill="#64748b">3</text>
+    <text x="353" y="34" font-size="12" font-weight="500" fill="#64748b">Specialist</text>
+
+    <line x1="420" y1="30" x2="460" y2="30" stroke="#cbd5e1" stroke-width="2"/>
+
+    <!-- Step 4 -->
+    <circle cx="480" cy="30" r="14" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="476" y="34" font-size="12" font-weight="600" fill="#64748b">4</text>
+    <text x="503" y="34" font-size="12" font-weight="500" fill="#64748b">Date &amp; Time</text>
+
+    <line x1="585" y1="30" x2="625" y2="30" stroke="#cbd5e1" stroke-width="2"/>
+
+    <!-- Step 5 -->
+    <circle cx="645" cy="30" r="14" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="641" y="34" font-size="12" font-weight="600" fill="#64748b">5</text>
+    <text x="668" y="34" font-size="12" font-weight="500" fill="#64748b">Extras</text>
+
+    <line x1="720" y1="30" x2="760" y2="30" stroke="#cbd5e1" stroke-width="2"/>
+
+    <!-- Step 6 -->
+    <circle cx="780" cy="30" r="14" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="776" y="34" font-size="12" font-weight="600" fill="#64748b">6</text>
+    <text x="803" y="34" font-size="12" font-weight="500" fill="#64748b">Your Info</text>
+
+    <line x1="865" y1="30" x2="905" y2="30" stroke="#cbd5e1" stroke-width="2"/>
+
+    <!-- Step 7 -->
+    <circle cx="925" cy="30" r="14" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="921" y="34" font-size="12" font-weight="600" fill="#64748b">7</text>
+    <text x="948" y="34" font-size="12" font-weight="500" fill="#64748b">Payment</text>
+
+    <line x1="1010" y1="30" x2="1030" y2="30" stroke="#cbd5e1" stroke-width="2"/>
+
+    <!-- Step 8 -->
+    <circle cx="1050" cy="30" r="12" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="1047" y="34" font-size="11" font-weight="600" fill="#64748b">8</text>
+  </g>
+
+  <!-- 2-COLUMN BOOKING CONTENT -->
+  <g transform="translate(60, 240)">
+    
+    <!-- LEFT COLUMN: Categories & Services (Width: 700px) -->
+    <g>
+      <!-- Category Tabs -->
+      <rect x="0" y="0" width="130" height="34" rx="17" fill="#4f46e5"/>
+      <text x="24" y="22" font-size="12" font-weight="700" fill="#ffffff">All Categories</text>
+
+      <rect x="140" y="0" width="150" height="34" rx="17" fill="#f1f5f9"/>
+      <text x="162" y="22" font-size="12" font-weight="600" fill="#475569">Medical Consultations</text>
+
+      <rect x="300" y="0" width="135" height="34" rx="17" fill="#f1f5f9"/>
+      <text x="324" y="22" font-size="12" font-weight="600" fill="#475569">Therapy &amp; Spa</text>
+
+      <rect x="445" y="0" width="125" height="34" rx="17" fill="#f1f5f9"/>
+      <text x="466" y="22" font-size="12" font-weight="600" fill="#475569">Dental Care</text>
+
+      <!-- Service Card 1 (Selected) -->
+      <g transform="translate(0, 50)">
+        <rect x="0" y="0" width="690" height="110" rx="12" fill="#ffffff" stroke="#4f46e5" stroke-width="2" filter="drop-shadow(0 4px 10px rgba(79,70,229,0.08))"/>
+        <circle cx="28" cy="55" r="12" fill="#4f46e5"/>
+        <text x="24" y="59" font-size="12" font-weight="800" fill="#ffffff">✓</text>
+        
+        <!-- Service Color Tag -->
+        <rect x="55" y="20" width="70" height="70" rx="10" fill="#eef2ff"/>
+        <text x="80" y="60" font-size="24">🩺</text>
+
+        <text x="140" y="42" font-size="16" font-weight="800" fill="#0f172a">Executive Health Checkup &amp; Assessment</text>
+        <text x="140" y="64" font-size="12" fill="#64748b">Comprehensive full-body medical analysis with personalized consultation.</text>
+        
+        <rect x="140" y="74" width="85" height="22" rx="4" fill="#f1f5f9"/>
+        <text x="150" y="89" font-size="11" font-weight="600" fill="#475569">⏱ 60 Mins</text>
+        
+        <rect x="235" y="74" width="115" height="22" rx="4" fill="#f1f5f9"/>
+        <text x="245" y="89" font-size="11" font-weight="600" fill="#475569">👥 1 Person (Max 1)</text>
+
+        <text x="590" y="45" font-size="20" font-weight="900" fill="#4f46e5">$150.00</text>
+        <text x="595" y="65" font-size="11" fill="#64748b">Deposit: $45</text>
+      </g>
+
+      <!-- Service Card 2 -->
+      <g transform="translate(0, 175)">
+        <rect x="0" y="0" width="690" height="110" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+        <circle cx="28" cy="55" r="12" fill="#ffffff" stroke="#cbd5e1"/>
+        
+        <rect x="55" y="20" width="70" height="70" rx="10" fill="#f0fdf4"/>
+        <text x="80" y="60" font-size="24">💆</text>
+
+        <text x="140" y="42" font-size="16" font-weight="700" fill="#0f172a">Aromatherapy &amp; Deep Tissue Massage</text>
+        <text x="140" y="64" font-size="12" fill="#64748b">Relaxing restorative massage with essential organic oils and hot stone therapy.</text>
+        
+        <rect x="140" y="74" width="85" height="22" rx="4" fill="#f1f5f9"/>
+        <text x="150" y="89" font-size="11" font-weight="600" fill="#475569">⏱ 90 Mins</text>
+
+        <rect x="235" y="74" width="115" height="22" rx="4" fill="#f1f5f9"/>
+        <text x="245" y="89" font-size="11" font-weight="600" fill="#475569">👥 1-2 Persons</text>
+
+        <text x="590" y="45" font-size="20" font-weight="900" fill="#0f172a">$120.00</text>
+        <text x="595" y="65" font-size="11" fill="#64748b">Deposit: $36</text>
+      </g>
+
+      <!-- Service Card 3 -->
+      <g transform="translate(0, 300)">
+        <rect x="0" y="0" width="690" height="110" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+        <circle cx="28" cy="55" r="12" fill="#ffffff" stroke="#cbd5e1"/>
+        
+        <rect x="55" y="20" width="70" height="70" rx="10" fill="#fffbeb"/>
+        <text x="80" y="60" font-size="24">🦷</text>
+
+        <text x="140" y="42" font-size="16" font-weight="700" fill="#0f172a">Dental Cleaning &amp; Preventative Polish</text>
+        <text x="140" y="64" font-size="12" fill="#64748b">Ultrasonic tartar removal, fluoride treatment, and digital panoramic dental scan.</text>
+        
+        <rect x="140" y="74" width="85" height="22" rx="4" fill="#f1f5f9"/>
+        <text x="150" y="89" font-size="11" font-weight="600" fill="#475569">⏱ 45 Mins</text>
+
+        <text x="600" y="45" font-size="20" font-weight="900" fill="#0f172a">$85.00</text>
+        <text x="605" y="65" font-size="11" fill="#64748b">Full payment</text>
+      </g>
+    </g>
+
+    <!-- RIGHT COLUMN: Live Order Summary Card (Width: 360px) -->
+    <g transform="translate(720, 0)">
+      <rect x="0" y="0" width="360" height="465" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+      
+      <!-- Summary Header -->
+      <path d="M 0 14 A 14 14 0 0 1 14 0 L 346 0 A 14 14 0 0 1 360 14 L 360 50 L 0 50 Z" fill="#e2e8f0"/>
+      <text x="24" y="32" font-size="13" font-weight="800" fill="#0f172a">RESERVATION SUMMARY</text>
+      
+      <g transform="translate(24, 70)">
+        <text x="0" y="16" font-size="11" font-weight="700" fill="#64748b">SELECTED SERVICE</text>
+        <text x="0" y="38" font-size="14" font-weight="800" fill="#0f172a">Executive Health Checkup</text>
+        <text x="0" y="55" font-size="11" fill="#4f46e5">Duration: 60 minutes</text>
+
+        <line x1="0" y1="75" x2="312" y2="75" stroke="#e2e8f0"/>
+
+        <text x="0" y="98" font-size="11" font-weight="700" fill="#64748b">LOCATION &amp; STAFF</text>
+        <text x="0" y="118" font-size="13" font-weight="600" fill="#0f172a">Downtown Medical Suite</text>
+        <text x="0" y="135" font-size="12" fill="#64748b">Specialist: Dr. Alex Rivera (Assigned)</text>
+
+        <line x1="0" y1="155" x2="312" y2="155" stroke="#e2e8f0"/>
+
+        <!-- Pricing Breakdown -->
+        <text x="0" y="180" font-size="12" fill="#64748b">Service Base Price:</text>
+        <text x="250" y="180" font-size="13" font-weight="700" fill="#0f172a">$150.00</text>
+
+        <text x="0" y="205" font-size="12" fill="#64748b">Required Deposit (30%):</text>
+        <text x="260" y="205" font-size="13" font-weight="700" fill="#0f172a">$45.00</text>
+
+        <text x="0" y="230" font-size="12" fill="#64748b">Due at Location:</text>
+        <text x="250" y="230" font-size="13" font-weight="700" fill="#0f172a">$105.00</text>
+
+        <line x1="0" y1="248" x2="312" y2="248" stroke="#cbd5e1" stroke-width="1.5"/>
+
+        <text x="0" y="278" font-size="14" font-weight="800" fill="#0f172a">Total Amount:</text>
+        <text x="230" y="278" font-size="20" font-weight="900" fill="#4f46e5">$150.00</text>
+
+        <!-- Next Button -->
+        <g transform="translate(0, 310)">
+          <rect x="0" y="0" width="312" height="48" rx="8" fill="#4f46e5"/>
+          <text x="90" y="29" font-size="14" font-weight="800" fill="#ffffff">Next Step →</text>
+        </g>
+      </g>
+    </g>
+  </g>
 </svg>

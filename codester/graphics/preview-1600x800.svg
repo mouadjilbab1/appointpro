@@ -1,0 +1,412 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" width="1600" height="800" style="background:#090d16; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="mainBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="40%" stop-color="#0f172a"/>
+      <stop offset="75%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#2e1065"/>
+    </linearGradient>
+
+    <!-- Brand Gradients -->
+    <linearGradient id="indigoPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Card Backgrounds -->
+    <linearGradient id="cardDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glowBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="80"/>
+    </filter>
+
+    <filter id="cardShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="badgeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background Covering All 1600x800 -->
+  <rect x="0" y="0" width="1600" height="800" fill="url(#mainBg)"/>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="200" cy="150" r="260" fill="#4f46e5" opacity="0.18" filter="url(#glowBlur)"/>
+  <circle cx="1400" cy="200" r="300" fill="#7c3aed" opacity="0.22" filter="url(#glowBlur)"/>
+  <circle cx="900" cy="700" r="280" fill="#06b6d4" opacity="0.12" filter="url(#glowBlur)"/>
+
+  <!-- Subtle Grid Lines -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="200" x2="1600" y2="200"/>
+    <line x1="0" y1="400" x2="1600" y2="400"/>
+    <line x1="0" y1="600" x2="1600" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="800"/>
+    <line x1="800" y1="0" x2="800" y2="800"/>
+    <line x1="1200" y1="0" x2="1200" y2="800"/>
+  </g>
+
+  <!-- ================= LEFT COLUMN: HERO CONTENT ================= -->
+  <g transform="translate(80, 80)">
+    <!-- Top Badges Row -->
+    <g>
+      <!-- WP Badge -->
+      <rect x="0" y="0" width="170" height="34" rx="17" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="18" cy="17" r="7" fill="#38bdf8"/>
+      <text x="34" y="22" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="0.5">WORDPRESS PLUGIN</text>
+
+      <!-- Rating Badge -->
+      <rect x="185" y="0" width="125" height="34" rx="17" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+      <text x="200" y="22" font-size="12" font-weight="700" fill="#fbbf24">★ ★ ★ ★ ★</text>
+      <text x="275" y="22" font-size="12" font-weight="700" fill="#ffffff">5.0</text>
+
+      <!-- Version Badge -->
+      <rect x="325" y="0" width="105" height="34" rx="17" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+      <text x="342" y="22" font-size="12" font-weight="600" fill="#a5b4fc">v1.0.0 Stable</text>
+    </g>
+
+    <!-- Brand & Title -->
+    <g transform="translate(0, 65)">
+      <!-- Logo Icon + App Name -->
+      <rect x="0" y="0" width="48" height="48" rx="12" fill="url(#indigoPurple)"/>
+      <!-- Mini Calendar Glyphs inside Logo -->
+      <rect x="12" y="14" width="24" height="22" rx="4" fill="#ffffff"/>
+      <rect x="12" y="14" width="24" height="6" rx="2" fill="#3730a3"/>
+      <circle cx="24" cy="27" r="3.5" fill="#10b981"/>
+
+      <text x="62" y="34" font-size="34" font-weight="900" fill="#ffffff" letter-spacing="-0.5">Appoint<tspan fill="#818cf8">Pro</tspan></text>
+    </g>
+
+    <!-- Main Headline -->
+    <text x="0" y="175" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-1">
+      Ultimate WordPress Appointment
+    </text>
+    <text x="0" y="225" font-size="44" font-weight="800" fill="url(#cyanBlue)" letter-spacing="-1">
+      Booking &amp; Scheduling System
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="275" font-size="16" fill="#94a3b8" line-height="24">
+      Commercial-grade scheduling engine with zero double-booking locks,
+    </text>
+    <text x="0" y="300" font-size="16" fill="#94a3b8">
+      modern 8-step wizard, Stripe/PayPal, and 2-way Google Calendar sync.
+    </text>
+
+    <!-- 6 Feature Cards Grid (2 columns x 3 rows) -->
+    <g transform="translate(0, 335)">
+      <!-- Row 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="280" height="52" rx="10" fill="#1e293b" stroke="#334155" opacity="0.9"/>
+        <circle cx="28" cy="26" r="14" fill="#312e81"/>
+        <text x="21" y="31" font-size="14" fill="#818cf8">⚡</text>
+        <text x="52" y="24" font-size="13" font-weight="700" fill="#f8fafc">8-Step Booking Wizard</text>
+        <text x="52" y="40" font-size="11" fill="#94a3b8">Mobile-first client flow</text>
+      </g>
+
+      <g transform="translate(295, 0)">
+        <rect width="280" height="52" rx="10" fill="#1e293b" stroke="#334155" opacity="0.9"/>
+        <circle cx="28" cy="26" r="14" fill="#064e3b"/>
+        <text x="20" y="31" font-size="13" fill="#34d399">🔒</text>
+        <text x="52" y="24" font-size="13" font-weight="700" fill="#f8fafc">Zero Double-Bookings</text>
+        <text x="52" y="40" font-size="11" fill="#94a3b8">10-min reservation lock</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 62)">
+        <rect width="280" height="52" rx="10" fill="#1e293b" stroke="#334155" opacity="0.9"/>
+        <circle cx="28" cy="26" r="14" fill="#4c1d95"/>
+        <text x="20" y="31" font-size="13" fill="#c084fc">💳</text>
+        <text x="52" y="24" font-size="13" font-weight="700" fill="#f8fafc">Stripe &amp; PayPal v2</text>
+        <text x="52" y="40" font-size="11" fill="#94a3b8">Cards, Apple Pay, Cash</text>
+      </g>
+
+      <g transform="translate(295, 62)">
+        <rect width="280" height="52" rx="10" fill="#1e293b" stroke="#334155" opacity="0.9"/>
+        <circle cx="28" cy="26" r="14" fill="#164e63"/>
+        <text x="20" y="31" font-size="13" fill="#38bdf8">📅</text>
+        <text x="52" y="24" font-size="13" font-weight="700" fill="#f8fafc">Interactive Calendar</text>
+        <text x="52" y="40" font-size="11" fill="#94a3b8">Day, Week, Month views</text>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 124)">
+        <rect width="280" height="52" rx="10" fill="#1e293b" stroke="#334155" opacity="0.9"/>
+        <circle cx="28" cy="26" r="14" fill="#701a75"/>
+        <text x="20" y="31" font-size="13" fill="#f472b6">👥</text>
+        <text x="52" y="24" font-size="13" font-weight="700" fill="#f8fafc">Staff Auto-Assignment</text>
+        <text x="52" y="40" font-size="11" fill="#94a3b8">Working hours &amp; breaks</text>
+      </g>
+
+      <g transform="translate(295, 124)">
+        <rect width="280" height="52" rx="10" fill="#1e293b" stroke="#334155" opacity="0.9"/>
+        <circle cx="28" cy="26" r="14" fill="#713f12"/>
+        <text x="20" y="31" font-size="13" fill="#facc15">🔄</text>
+        <text x="52" y="24" font-size="13" font-weight="700" fill="#f8fafc">2-Way Google Calendar</text>
+        <text x="52" y="40" font-size="11" fill="#94a3b8">Sync appointments &amp; busy</text>
+      </g>
+    </g>
+
+    <!-- Bottom Tech Pills -->
+    <g transform="translate(0, 545)">
+      <rect x="0" y="0" width="600" height="42" rx="8" fill="#0f172a" stroke="#1e293b"/>
+      <text x="18" y="26" font-size="12" font-weight="700" fill="#64748b">INTEGRATIONS:</text>
+      
+      <rect x="125" y="8" width="65" height="26" rx="5" fill="#1e293b"/>
+      <text x="137" y="25" font-size="11" font-weight="700" fill="#818cf8">Stripe</text>
+      
+      <rect x="198" y="8" width="68" height="26" rx="5" fill="#1e293b"/>
+      <text x="210" y="25" font-size="11" font-weight="700" fill="#38bdf8">PayPal</text>
+      
+      <rect x="274" y="8" width="95" height="26" rx="5" fill="#1e293b"/>
+      <text x="286" y="25" font-size="11" font-weight="700" fill="#4ade80">WooCommerce</text>
+
+      <rect x="377" y="8" width="75" height="26" rx="5" fill="#1e293b"/>
+      <text x="389" y="25" font-size="11" font-weight="700" fill="#fbbf24">PHP 8.3</text>
+
+      <rect x="460" y="8" width="85" height="26" rx="5" fill="#1e293b"/>
+      <text x="472" y="25" font-size="11" font-weight="700" fill="#e2e8f0">RTL Ready</text>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: INTERACTIVE UI MOCKUP ================= -->
+  <g transform="translate(730, 75)" filter="url(#cardShadow)">
+    
+    <!-- MOCKUP 1 (BACK LAYER): Admin Dashboard Window -->
+    <g opacity="0.95">
+      <!-- Window Frame (780 x 500) -->
+      <rect x="0" y="0" width="790" height="500" rx="16" fill="#ffffff" stroke="#334155" stroke-width="2"/>
+      
+      <!-- Window Header Bar -->
+      <path d="M 0 16 A 16 16 0 0 1 16 0 L 774 0 A 16 16 0 0 1 790 16 L 790 52 L 0 52 Z" fill="#f8fafc"/>
+      <line x1="0" y1="52" x2="790" y2="52" stroke="#e2e8f0" stroke-width="1.5"/>
+      <circle cx="28" cy="26" r="6" fill="#ef4444"/>
+      <circle cx="48" cy="26" r="6" fill="#f59e0b"/>
+      <circle cx="68" cy="26" r="6" fill="#10b981"/>
+      <text x="95" y="31" font-size="13" font-weight="700" fill="#0f172a">AppointPro Admin — Overview &amp; Live Analytics</text>
+      
+      <rect x="665" y="14" width="105" height="26" rx="13" fill="#10b981" opacity="0.15"/>
+      <circle cx="680" cy="27" r="4" fill="#10b981"/>
+      <text x="692" y="31" font-size="11" font-weight="700" fill="#059669">System Live</text>
+
+      <!-- KPI Stat Cards Row -->
+      <g transform="translate(25, 70)">
+        <!-- Stat Card 1 -->
+        <rect x="0" y="0" width="168" height="85" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+        <rect x="0" y="0" width="4" height="85" rx="2" fill="#4f46e5"/>
+        <text x="18" y="28" font-size="11" font-weight="600" fill="#64748b">TOTAL REVENUE</text>
+        <text x="18" y="58" font-size="22" font-weight="800" fill="#0f172a">$24,850</text>
+        <text x="18" y="74" font-size="11" font-weight="700" fill="#10b981">↑ +18.4% this mo</text>
+
+        <!-- Stat Card 2 -->
+        <rect x="188" y="0" width="168" height="85" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+        <rect x="188" y="0" width="4" height="85" rx="2" fill="#10b981"/>
+        <text x="206" y="28" font-size="11" font-weight="600" fill="#64748b">APPOINTMENTS</text>
+        <text x="206" y="58" font-size="22" font-weight="800" fill="#0f172a">1,428</text>
+        <text x="206" y="74" font-size="11" font-weight="600" fill="#64748b">38 scheduled today</text>
+
+        <!-- Stat Card 3 -->
+        <rect x="376" y="0" width="168" height="85" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+        <rect x="376" y="0" width="4" height="85" rx="2" fill="#06b6d4"/>
+        <text x="394" y="28" font-size="11" font-weight="600" fill="#64748b">CONFIRMED RATE</text>
+        <text x="394" y="58" font-size="22" font-weight="800" fill="#0f172a">98.2%</text>
+        <text x="394" y="74" font-size="11" font-weight="700" fill="#06b6d4">Zero Conflicts</text>
+
+        <!-- Stat Card 4 -->
+        <rect x="564" y="0" width="176" height="85" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+        <rect x="564" y="0" width="4" height="85" rx="2" fill="#f59e0b"/>
+        <text x="582" y="28" font-size="11" font-weight="600" fill="#64748b">STAFF ON DUTY</text>
+        <text x="582" y="58" font-size="22" font-weight="800" fill="#0f172a">14 / 16</text>
+        <text x="582" y="74" font-size="11" font-weight="600" fill="#64748b">Across 3 Branches</text>
+      </g>
+
+      <!-- Recent Appointments Table Inside Admin Window -->
+      <g transform="translate(25, 175)">
+        <rect x="0" y="0" width="740" height="280" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+        
+        <!-- Table Header -->
+        <path d="M 0 10 A 10 10 0 0 1 10 0 L 730 0 A 10 10 0 0 1 740 10 L 740 38 L 0 38 Z" fill="#e2e8f0"/>
+        <text x="20" y="24" font-size="11" font-weight="700" fill="#475569">REF #</text>
+        <text x="110" y="24" font-size="11" font-weight="700" fill="#475569">CUSTOMER</text>
+        <text x="260" y="24" font-size="11" font-weight="700" fill="#475569">SERVICE &amp; SPECIALIST</text>
+        <text x="470" y="24" font-size="11" font-weight="700" fill="#475569">DATE &amp; TIME</text>
+        <text x="630" y="24" font-size="11" font-weight="700" fill="#475569">STATUS</text>
+
+        <!-- Table Row 1 -->
+        <line x1="0" y1="84" x2="740" y2="84" stroke="#e2e8f0"/>
+        <text x="20" y="64" font-size="12" font-weight="700" fill="#4f46e5">#AP-9041</text>
+        <text x="110" y="58" font-size="12" font-weight="700" fill="#0f172a">Dr. Sarah Jenkins</text>
+        <text x="110" y="74" font-size="11" fill="#64748b">sarah@clinic.com</text>
+        <text x="260" y="58" font-size="12" font-weight="600" fill="#0f172a">Executive Consultation (60m)</text>
+        <text x="260" y="74" font-size="11" fill="#64748b">Staff: Dr. Alex Rivera</text>
+        <text x="470" y="58" font-size="12" font-weight="700" fill="#0f172a">Today, 10:30 AM</text>
+        <text x="470" y="74" font-size="11" fill="#10b981">Downtown Medical Suite</text>
+        <rect x="630" y="50" width="85" height="24" rx="12" fill="#dcfce7"/>
+        <text x="643" y="66" font-size="11" font-weight="700" fill="#15803d">CONFIRMED</text>
+
+        <!-- Table Row 2 -->
+        <line x1="0" y1="130" x2="740" y2="130" stroke="#e2e8f0"/>
+        <text x="20" y="110" font-size="12" font-weight="700" fill="#4f46e5">#AP-9042</text>
+        <text x="110" y="104" font-size="12" font-weight="700" fill="#0f172a">Michael Chang</text>
+        <text x="110" y="120" font-size="11" fill="#64748b">mchang@techcorp.io</text>
+        <text x="260" y="104" font-size="12" font-weight="600" fill="#0f172a">VIP Spa &amp; Styling Package</text>
+        <text x="260" y="120" font-size="11" fill="#64748b">Staff: Elena Rostova</text>
+        <text x="470" y="104" font-size="12" font-weight="700" fill="#0f172a">Today, 01:15 PM</text>
+        <text x="470" y="120" font-size="11" fill="#0284c7">West End Branch</text>
+        <rect x="630" y="96" width="85" height="24" rx="12" fill="#dcfce7"/>
+        <text x="643" y="112" font-size="11" font-weight="700" fill="#15803d">CONFIRMED</text>
+
+        <!-- Table Row 3 -->
+        <text x="20" y="156" font-size="12" font-weight="700" fill="#4f46e5">#AP-9043</text>
+        <text x="110" y="150" font-size="12" font-weight="700" fill="#0f172a">Sophia Rodriguez</text>
+        <text x="110" y="166" font-size="11" fill="#64748b">sophia.r@outlook.com</text>
+        <text x="260" y="150" font-size="12" font-weight="600" fill="#0f172a">Dental Examination &amp; X-Ray</text>
+        <text x="260" y="166" font-size="11" fill="#64748b">Staff: Dr. Emily Stone</text>
+        <text x="470" y="150" font-size="12" font-weight="700" fill="#0f172a">Today, 03:00 PM</text>
+        <text x="470" y="166" font-size="11" fill="#64748b">Downtown Medical Suite</text>
+        <rect x="630" y="142" width="85" height="24" rx="12" fill="#fef3c7"/>
+        <text x="650" y="158" font-size="11" font-weight="700" fill="#b45309">PENDING</text>
+      </g>
+    </g>
+
+    <!-- MOCKUP 2 (FRONT FLOATING LAYER): Client 8-Step Booking Wizard Card -->
+    <g transform="translate(60, 220)" filter="url(#badgeShadow)">
+      <!-- Card Frame (670 x 390) -->
+      <rect width="670" height="390" rx="18" fill="#ffffff" stroke="#4f46e5" stroke-width="2.5"/>
+
+      <!-- Header of Booking Wizard -->
+      <path d="M 0 18 A 18 18 0 0 1 18 0 L 652 0 A 18 18 0 0 1 670 18 L 670 65 L 0 65 Z" fill="#4f46e5"/>
+      <text x="30" y="38" font-size="18" font-weight="800" fill="#ffffff">Book An Appointment</text>
+      <text x="30" y="54" font-size="11" font-weight="500" fill="#c7d2fe">Step 4 of 8: Select Date &amp; Available Time Slot</text>
+      
+      <!-- Slot Lock Indicator Badge -->
+      <rect x="470" y="18" width="175" height="28" rx="14" fill="#312e81"/>
+      <circle cx="486" cy="32" r="5" fill="#34d399"/>
+      <text x="498" y="36" font-size="11" font-weight="700" fill="#ffffff">🔒 10-Min Lock Active</text>
+
+      <!-- Stepper Progress Dots -->
+      <g transform="translate(30, 80)">
+        <!-- Step 1 Done -->
+        <circle cx="12" cy="12" r="12" fill="#10b981"/>
+        <text x="8" y="16" font-size="11" font-weight="800" fill="#ffffff">✓</text>
+        <line x1="28" y1="12" x2="68" y2="12" stroke="#10b981" stroke-width="3"/>
+        
+        <!-- Step 2 Done -->
+        <circle cx="84" cy="12" r="12" fill="#10b981"/>
+        <text x="80" y="16" font-size="11" font-weight="800" fill="#ffffff">✓</text>
+        <line x1="100" y1="12" x2="140" y2="12" stroke="#10b981" stroke-width="3"/>
+
+        <!-- Step 3 Done -->
+        <circle cx="156" cy="12" r="12" fill="#10b981"/>
+        <text x="152" y="16" font-size="11" font-weight="800" fill="#ffffff">✓</text>
+        <line x1="172" y1="12" x2="212" y2="12" stroke="#4f46e5" stroke-width="3"/>
+
+        <!-- Step 4 Active -->
+        <circle cx="228" cy="12" r="13" fill="#4f46e5" stroke="#c7d2fe" stroke-width="3"/>
+        <text x="224" y="16" font-size="11" font-weight="800" fill="#ffffff">4</text>
+        <line x1="245" y1="12" x2="285" y2="12" stroke="#e2e8f0" stroke-width="3"/>
+
+        <!-- Step 5 Future -->
+        <circle cx="301" cy="12" r="10" fill="#f1f5f9"/>
+        <text x="298" y="16" font-size="10" font-weight="700" fill="#94a3b8">5</text>
+        <line x1="315" y1="12" x2="355" y2="12" stroke="#e2e8f0" stroke-width="3"/>
+
+        <!-- Step 6 Future -->
+        <circle cx="371" cy="12" r="10" fill="#f1f5f9"/>
+        <text x="368" y="16" font-size="10" font-weight="700" fill="#94a3b8">6</text>
+        <line x1="385" y1="12" x2="425" y2="12" stroke="#e2e8f0" stroke-width="3"/>
+
+        <!-- Step 7 Future -->
+        <circle cx="441" cy="12" r="10" fill="#f1f5f9"/>
+        <text x="438" y="16" font-size="10" font-weight="700" fill="#94a3b8">7</text>
+        <line x1="455" y1="12" x2="495" y2="12" stroke="#e2e8f0" stroke-width="3"/>
+
+        <!-- Step 8 Future -->
+        <circle cx="511" cy="12" r="10" fill="#f1f5f9"/>
+        <text x="508" y="16" font-size="10" font-weight="700" fill="#94a3b8">8</text>
+      </g>
+
+      <!-- Selected Service & Time Slots Panel -->
+      <g transform="translate(30, 120)">
+        <!-- Left: Selected Service Box -->
+        <rect x="0" y="0" width="280" height="175" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="18" y="26" font-size="11" font-weight="700" fill="#64748b">BOOKING SUMMARY</text>
+        <text x="18" y="52" font-size="15" font-weight="800" fill="#0f172a">Premium Health Check</text>
+        <text x="18" y="72" font-size="12" font-weight="600" fill="#4f46e5">Specialist: Dr. Alex Rivera</text>
+        <text x="18" y="90" font-size="11" fill="#64748b">Duration: 60 mins • Buffer: 15 mins</text>
+        
+        <line x1="18" y1="105" x2="262" y2="105" stroke="#e2e8f0"/>
+        <text x="18" y="130" font-size="11" fill="#64748b">Service Deposit (30%):</text>
+        <text x="210" y="130" font-size="13" font-weight="700" fill="#0f172a">$45.00</text>
+        <text x="18" y="155" font-size="13" font-weight="800" fill="#0f172a">Total Price:</text>
+        <text x="200" y="155" font-size="16" font-weight="900" fill="#4f46e5">$150.00</text>
+
+        <!-- Right: Real Available Slots -->
+        <g transform="translate(305, 0)">
+          <text x="0" y="16" font-size="12" font-weight="700" fill="#0f172a">Available Slots for Today:</text>
+          
+          <!-- Slot 1 (Selected) -->
+          <rect x="0" y="30" width="95" height="42" rx="8" fill="#4f46e5"/>
+          <text x="18" y="56" font-size="13" font-weight="800" fill="#ffffff">09:00 AM</text>
+
+          <!-- Slot 2 -->
+          <rect x="105" y="30" width="95" height="42" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+          <text x="123" y="56" font-size="13" font-weight="700" fill="#0f172a">10:30 AM</text>
+
+          <!-- Slot 3 (Booked) -->
+          <rect x="210" y="30" width="95" height="42" rx="8" fill="#f1f5f9" stroke="#e2e8f0"/>
+          <text x="232" y="56" font-size="13" font-weight="600" fill="#94a3b8">12:00 PM</text>
+
+          <!-- Slot 4 -->
+          <rect x="0" y="82" width="95" height="42" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+          <text x="18" y="108" font-size="13" font-weight="700" fill="#0f172a">02:00 PM</text>
+
+          <!-- Slot 5 -->
+          <rect x="105" y="82" width="95" height="42" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+          <text x="123" y="108" font-size="13" font-weight="700" fill="#0f172a">03:30 PM</text>
+
+          <!-- Slot 6 -->
+          <rect x="210" y="82" width="95" height="42" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+          <text x="228" y="108" font-size="13" font-weight="700" fill="#0f172a">05:00 PM</text>
+
+          <!-- Timezone Note -->
+          <text x="0" y="150" font-size="11" fill="#64748b">🌐 Timezone: America/New_York (Auto-detected)</text>
+        </g>
+      </g>
+
+      <!-- Bottom Wizard Buttons -->
+      <g transform="translate(30, 318)">
+        <rect x="0" y="0" width="105" height="46" rx="8" fill="#f1f5f9" stroke="#cbd5e1"/>
+        <text x="26" y="28" font-size="13" font-weight="700" fill="#475569">← Back</text>
+
+        <rect x="445" y="0" width="165" height="46" rx="8" fill="#10b981"/>
+        <text x="472" y="28" font-size="14" font-weight="800" fill="#ffffff">Continue →</text>
+      </g>
+    </g>
+
+    <!-- Floating Badge: Success Toast -->
+    <g transform="translate(480, 160)" filter="url(#badgeShadow)">
+      <rect width="250" height="52" rx="26" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="28" cy="26" r="14" fill="#10b981"/>
+      <text x="23" y="30" font-size="14" fill="#ffffff">✓</text>
+      <text x="52" y="24" font-size="12" font-weight="800" fill="#ffffff">Payment Confirmed</text>
+      <text x="52" y="40" font-size="11" fill="#94a3b8">$150.00 via Stripe Card</text>
+    </g>
+  </g>
+</svg>
