@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" style="background:#f8fafc; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <rect x="0" y="0" width="1200" height="780" fill="#f8fafc"/>
+  <rect x="30" y="25" width="1140" height="730" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="drop-shadow(0 10px 25px rgba(0,0,0,0.06))"/>
+  
+  <!-- Header -->
+  <circle cx="60" cy="60" r="6" fill="#ef4444"/>
+  <circle cx="80" cy="60" r="6" fill="#f59e0b"/>
+  <circle cx="100" cy="60" r="6" fill="#10b981"/>
+  <text x="135" y="66" font-size="20" font-weight="700" fill="#0f172a">AppointPro – Calendar</text>
+  
+  <!-- Navigation Tabs -->
+  <rect x="55" y="105" width="1090" height="48" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="88" y="134" font-size="13" font-weight="500" fill="#64748b">Dashboard</text>
+  <rect x="170" y="111" width="90" height="36" rx="6" fill="#4f46e5"/>
+  <text x="190" y="134" font-size="13" font-weight="600" fill="#ffffff">Calendar</text>
+  <text x="285" y="134" font-size="13" font-weight="500" fill="#64748b">Appointments</text>
+  <text x="395" y="134" font-size="13" font-weight="500" fill="#64748b">Services</text>
+  <text x="475" y="134" font-size="13" font-weight="500" fill="#64748b">Staff</text>
+  <text x="535" y="134" font-size="13" font-weight="500" fill="#64748b">Customers</text>
+  
+  <!-- Calendar Controls Bar -->
+  <text x="55" y="195" font-size="22" font-weight="700" fill="#0f172a">November 2026</text>
+  
+  <!-- View Switcher -->
+  <rect x="235" y="172" width="180" height="34" rx="6" fill="#f1f5f9"/>
+  <rect x="237" y="174" width="60" height="30" rx="5" fill="#ffffff" filter="drop-shadow(0 1px 2px rgba(0,0,0,0.05))"/>
+  <text x="252" y="194" font-size="12" font-weight="600" fill="#0f172a">Month</text>
+  <text x="312" y="194" font-size="12" font-weight="500" fill="#64748b">Week</text>
+  <text x="375" y="194" font-size="12" font-weight="500" fill="#64748b">Day</text>
+  
+  <!-- Filter Dropdowns -->
+  <rect x="830" y="172" width="150" height="34" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="845" y="194" font-size="12" fill="#334155">All Staff Members ▾</text>
+  
+  <rect x="995" y="172" width="150" height="34" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="1010" y="194" font-size="12" fill="#334155">All Locations ▾</text>
+  
+  <!-- Calendar Grid Header -->
+  <rect x="55" y="225" width="1090" height="35" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="115" y="247" font-size="12" font-weight="700" fill="#64748b">MON</text>
+  <text x="270" y="247" font-size="12" font-weight="700" fill="#64748b">TUE</text>
+  <text x="425" y="247" font-size="12" font-weight="700" fill="#64748b">WED</text>
+  <text x="580" y="247" font-size="12" font-weight="700" fill="#64748b">THU</text>
+  <text x="735" y="247" font-size="12" font-weight="700" fill="#64748b">FRI</text>
+  <text x="890" y="247" font-size="12" font-weight="700" fill="#64748b">SAT</text>
+  <text x="1045" y="247" font-size="12" font-weight="700" fill="#64748b">SUN</text>
+  
+  <!-- Calendar Cells (Row 1) -->
+  <rect x="55" y="265" width="1090" height="110" fill="none" stroke="#e2e8f0"/>
+  <line x1="210" y1="265" x2="210" y2="375" stroke="#e2e8f0"/>
+  <line x1="365" y1="265" x2="365" y2="375" stroke="#e2e8f0"/>
+  <line x1="520" y1="265" x2="520" y2="375" stroke="#e2e8f0"/>
+  <line x1="675" y1="265" x2="675" y2="375" stroke="#e2e8f0"/>
+  <line x1="830" y1="265" x2="830" y2="375" stroke="#e2e8f0"/>
+  <line x1="985" y1="265" x2="985" y2="375" stroke="#e2e8f0"/>
+  
+  <text x="65" y="285" font-size="12" font-weight="600" fill="#94a3b8">26</text>
+  <text x="220" y="285" font-size="12" font-weight="600" fill="#94a3b8">27</text>
+  <text x="375" y="285" font-size="12" font-weight="600" fill="#94a3b8">28</text>
+  <text x="530" y="285" font-size="12" font-weight="600" fill="#94a3b8">29</text>
+  <text x="685" y="285" font-size="12" font-weight="600" fill="#94a3b8">30</text>
+  <text x="840" y="285" font-size="12" font-weight="600" fill="#0f172a">1</text>
+  <text x="995" y="285" font-size="12" font-weight="600" fill="#0f172a">2</text>
+  
+  <!-- Events in Row 1 -->
+  <rect x="836" y="295" width="142" height="26" rx="4" fill="#eef2ff"/>
+  <line x1="836" y1="295" x2="836" y2="321" stroke="#4f46e5" stroke-width="3"/>
+  <text x="844" y="312" font-size="11" font-weight="600" fill="#312e81">10:00 Elena R.</text>
+  
+  <rect x="991" y="295" width="142" height="26" rx="4" fill="#ecfdf5"/>
+  <line x1="991" y1="295" x2="991" y2="321" stroke="#10b981" stroke-width="3"/>
+  <text x="999" y="312" font-size="11" font-weight="600" fill="#064e3b">14:00 Massage</text>
+  
+  <!-- Calendar Cells (Row 2) -->
+  <rect x="55" y="375" width="1090" height="110" fill="none" stroke="#e2e8f0"/>
+  <line x1="210" y1="375" x2="210" y2="485" stroke="#e2e8f0"/>
+  <line x1="365" y1="375" x2="365" y2="485" stroke="#e2e8f0"/>
+  <line x1="520" y1="375" x2="520" y2="485" stroke="#e2e8f0"/>
+  <line x1="675" y1="375" x2="675" y2="485" stroke="#e2e8f0"/>
+  <line x1="830" y1="375" x2="830" y2="485" stroke="#e2e8f0"/>
+  <line x1="985" y1="375" x2="985" y2="485" stroke="#e2e8f0"/>
+  
+  <text x="65" y="395" font-size="12" font-weight="600" fill="#0f172a">3</text>
+  <text x="220" y="395" font-size="12" font-weight="600" fill="#0f172a">4</text>
+  <text x="375" y="395" font-size="12" font-weight="600" fill="#0f172a">5</text>
+  <text x="530" y="395" font-size="12" font-weight="600" fill="#0f172a">6</text>
+  <text x="685" y="395" font-size="12" font-weight="600" fill="#0f172a">7</text>
+  <text x="840" y="395" font-size="12" font-weight="600" fill="#0f172a">8</text>
+  <text x="995" y="395" font-size="12" font-weight="600" fill="#0f172a">9</text>
+  
+  <!-- Events in Row 2 -->
+  <rect x="61" y="405" width="142" height="26" rx="4" fill="#eef2ff"/>
+  <line x1="61" y1="405" x2="61" y2="431" stroke="#4f46e5" stroke-width="3"/>
+  <text x="69" y="422" font-size="11" font-weight="600" fill="#312e81">09:30 Haircut (Sarah)</text>
+  
+  <rect x="61" y="435" width="142" height="26" rx="4" fill="#fff7ed"/>
+  <line x1="61" y1="435" x2="61" y2="461" stroke="#f97316" stroke-width="3"/>
+  <text x="69" y="452" font-size="11" font-weight="600" fill="#7c2d12">11:00 Facial Care</text>
+  
+  <rect x="371" y="405" width="142" height="26" rx="4" fill="#ecfdf5"/>
+  <line x1="371" y1="405" x2="371" y2="431" stroke="#10b981" stroke-width="3"/>
+  <text x="379" y="422" font-size="11" font-weight="600" fill="#064e3b">13:00 Deep Tissue</text>
+  
+  <rect x="681" y="405" width="142" height="26" rx="4" fill="#eef2ff"/>
+  <line x1="681" y1="405" x2="681" y2="431" stroke="#4f46e5" stroke-width="3"/>
+  <text x="689" y="422" font-size="11" font-weight="600" fill="#312e81">15:30 Haircut &amp; Beard</text>
+  
+  <!-- Calendar Cells (Row 3) -->
+  <rect x="55" y="485" width="1090" height="110" fill="none" stroke="#e2e8f0"/>
+  <line x1="210" y1="485" x2="210" y2="595" stroke="#e2e8f0"/>
+  <line x1="365" y1="485" x2="365" y2="595" stroke="#e2e8f0"/>
+  <line x1="520" y1="485" x2="520" y2="595" stroke="#e2e8f0"/>
+  <line x1="675" y1="485" x2="675" y2="595" stroke="#e2e8f0"/>
+  <line x1="830" y1="485" x2="830" y2="595" stroke="#e2e8f0"/>
+  <line x1="985" y1="485" x2="985" y2="595" stroke="#e2e8f0"/>
+  
+  <text x="65" y="505" font-size="12" font-weight="600" fill="#0f172a">10</text>
+  <text x="220" y="505" font-size="12" font-weight="600" fill="#0f172a">11</text>
+  <text x="375" y="505" font-size="12" font-weight="600" fill="#0f172a">12</text>
+  <text x="530" y="505" font-size="12" font-weight="600" fill="#0f172a">13</text>
+  <text x="685" y="505" font-size="12" font-weight="600" fill="#0f172a">14</text>
+  
+  <!-- Today Highlight on 15 -->
+  <rect x="830" y="485" width="155" height="110" fill="#f5f3ff"/>
+  <circle cx="845" cy="502" r="11" fill="#4f46e5"/>
+  <text x="839" y="506" font-size="11" font-weight="700" fill="#ffffff">15</text>
+  <rect x="836" y="520" width="142" height="26" rx="4" fill="#eef2ff"/>
+  <line x1="836" y1="520" x2="836" y2="546" stroke="#4f46e5" stroke-width="3"/>
+  <text x="844" y="537" font-size="11" font-weight="600" fill="#312e81">10:00 Elena R.</text>
+  <rect x="836" y="550" width="142" height="26" rx="4" fill="#ecfdf5"/>
+  <line x1="836" y1="550" x2="836" y2="576" stroke="#10b981" stroke-width="3"/>
+  <text x="844" y="567" font-size="11" font-weight="600" fill="#064e3b">11:30 Marcus V.</text>
+  
+  <text x="995" y="505" font-size="12" font-weight="600" fill="#0f172a">16</text>
+</svg>

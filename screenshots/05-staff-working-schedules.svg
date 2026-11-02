@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" style="background:#f8fafc; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <rect x="0" y="0" width="1200" height="780" fill="#f8fafc"/>
+  <rect x="30" y="25" width="1140" height="730" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="drop-shadow(0 10px 25px rgba(0,0,0,0.06))"/>
+  
+  <circle cx="60" cy="60" r="6" fill="#ef4444"/>
+  <circle cx="80" cy="60" r="6" fill="#f59e0b"/>
+  <circle cx="100" cy="60" r="6" fill="#10b981"/>
+  <text x="135" y="66" font-size="20" font-weight="700" fill="#0f172a">AppointPro – Staff &amp; Schedules</text>
+  
+  <!-- Navigation Tabs -->
+  <rect x="55" y="105" width="1090" height="48" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="88" y="134" font-size="13" font-weight="500" fill="#64748b">Dashboard</text>
+  <text x="180" y="134" font-size="13" font-weight="500" fill="#64748b">Calendar</text>
+  <text x="260" y="134" font-size="13" font-weight="500" fill="#64748b">Appointments</text>
+  <text x="380" y="134" font-size="13" font-weight="500" fill="#64748b">Services</text>
+  <rect x="450" y="111" width="75" height="36" rx="6" fill="#4f46e5"/>
+  <text x="472" y="134" font-size="13" font-weight="600" fill="#ffffff">Staff</text>
+  <text x="545" y="134" font-size="13" font-weight="500" fill="#64748b">Customers</text>
+  <text x="640" y="134" font-size="13" font-weight="500" fill="#64748b">Reports</text>
+  
+  <!-- Content Layout: 2 Columns (Staff List + Schedule Editor) -->
+  <!-- Left Column: Staff Directory -->
+  <rect x="55" y="175" width="360" height="550" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="80" y="210" font-size="16" font-weight="700" fill="#0f172a">Team Members</text>
+  
+  <!-- Staff Card 1 (Active/Selected) -->
+  <rect x="75" y="235" width="320" height="85" rx="8" fill="#f5f3ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <circle cx="115" cy="277" r="22" fill="#e0e7ff"/>
+  <text x="108" y="283" font-size="16" font-weight="700" fill="#4f46e5">SJ</text>
+  <text x="150" y="270" font-size="14" font-weight="700" fill="#0f172a">Sarah Jenkins</text>
+  <text x="150" y="290" font-size="12" fill="#64748b">sarah@salon.com</text>
+  <rect x="315" y="258" width="65" height="20" rx="10" fill="#ecfdf5"/>
+  <text x="326" y="272" font-size="10" font-weight="600" fill="#065f46">Active</text>
+  
+  <!-- Staff Card 2 -->
+  <rect x="75" y="335" width="320" height="85" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <circle cx="115" cy="377" r="22" fill="#f1f5f9"/>
+  <text x="107" y="383" font-size="16" font-weight="700" fill="#64748b">DM</text>
+  <text x="150" y="370" font-size="14" font-weight="700" fill="#0f172a">David Miller</text>
+  <text x="150" y="390" font-size="12" fill="#64748b">david.m@spa.com</text>
+  <rect x="315" y="358" width="65" height="20" rx="10" fill="#ecfdf5"/>
+  <text x="326" y="372" font-size="10" font-weight="600" fill="#065f46">Active</text>
+  
+  <!-- Staff Card 3 -->
+  <rect x="75" y="435" width="320" height="85" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <circle cx="115" cy="477" r="22" fill="#f1f5f9"/>
+  <text x="107" y="483" font-size="16" font-weight="700" fill="#64748b">LC</text>
+  <text x="150" y="470" font-size="14" font-weight="700" fill="#0f172a">Dr. Liam Chen</text>
+  <text x="150" y="490" font-size="12" fill="#64748b">liam.chen@clinic.com</text>
+  <rect x="315" y="458" width="65" height="20" rx="10" fill="#ecfdf5"/>
+  <text x="326" y="472" font-size="10" font-weight="600" fill="#065f46">Active</text>
+  
+  <!-- Right Column: Weekly Schedule & Breaks Editor -->
+  <rect x="435" y="175" width="710" height="550" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="465" y="210" font-size="16" font-weight="700" fill="#0f172a">Working Schedule – Sarah Jenkins</text>
+  <text x="465" y="230" font-size="12" fill="#64748b">Configure weekly available hours and recurring lunch break periods:</text>
+  
+  <!-- Schedule Rows (Monday to Friday) -->
+  <!-- Mon -->
+  <rect x="465" y="255" width="650" height="55" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="485" y="287" font-size="13" font-weight="700" fill="#0f172a">Monday</text>
+  <rect x="580" y="270" width="100" height="28" rx="5" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="600" y="289" font-size="12" fill="#334155">09:00 AM</text>
+  <text x="690" y="289" font-size="12" fill="#64748b">to</text>
+  <rect x="715" y="270" width="100" height="28" rx="5" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="735" y="289" font-size="12" fill="#334155">05:00 PM</text>
+  <rect x="840" y="270" width="165" height="28" rx="5" fill="#eef2ff"/>
+  <text x="855" y="288" font-size="11" font-weight="600" fill="#4f46e5">☕ Break: 12:30 - 13:30</text>
+  <rect x="1035" y="272" width="60" height="24" rx="12" fill="#10b981"/>
+  <circle cx="1080" cy="284" r="9" fill="#ffffff"/>
+  
+  <!-- Tue -->
+  <rect x="465" y="325" width="650" height="55" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="485" y="357" font-size="13" font-weight="700" fill="#0f172a">Tuesday</text>
+  <rect x="580" y="340" width="100" height="28" rx="5" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="600" y="359" font-size="12" fill="#334155">09:00 AM</text>
+  <text x="690" y="359" font-size="12" fill="#64748b">to</text>
+  <rect x="715" y="340" width="100" height="28" rx="5" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="735" y="359" font-size="12" fill="#334155">05:00 PM</text>
+  <rect x="840" y="340" width="165" height="28" rx="5" fill="#eef2ff"/>
+  <text x="855" y="358" font-size="11" font-weight="600" fill="#4f46e5">☕ Break: 12:30 - 13:30</text>
+  <rect x="1035" y="342" width="60" height="24" rx="12" fill="#10b981"/>
+  <circle cx="1080" cy="354" r="9" fill="#ffffff"/>
+  
+  <!-- Wed -->
+  <rect x="465" y="395" width="650" height="55" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="485" y="427" font-size="13" font-weight="700" fill="#0f172a">Wednesday</text>
+  <rect x="580" y="410" width="100" height="28" rx="5" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="600" y="429" font-size="12" fill="#334155">09:00 AM</text>
+  <text x="690" y="429" font-size="12" fill="#64748b">to</text>
+  <rect x="715" y="410" width="100" height="28" rx="5" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="735" y="429" font-size="12" fill="#334155">05:00 PM</text>
+  <rect x="840" y="410" width="165" height="28" rx="5" fill="#eef2ff"/>
+  <text x="855" y="428" font-size="11" font-weight="600" fill="#4f46e5">☕ Break: 12:30 - 13:30</text>
+  <rect x="1035" y="412" width="60" height="24" rx="12" fill="#10b981"/>
+  <circle cx="1080" cy="424" r="9" fill="#ffffff"/>
+  
+  <!-- Thu -->
+  <rect x="465" y="465" width="650" height="55" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="485" y="497" font-size="13" font-weight="700" fill="#0f172a">Thursday</text>
+  <rect x="580" y="480" width="100" height="28" rx="5" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="600" y="499" font-size="12" fill="#334155">09:00 AM</text>
+  <text x="690" y="499" font-size="12" fill="#64748b">to</text>
+  <rect x="715" y="480" width="100" height="28" rx="5" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="735" y="499" font-size="12" fill="#334155">05:00 PM</text>
+  <rect x="840" y="480" width="165" height="28" rx="5" fill="#eef2ff"/>
+  <text x="855" y="498" font-size="11" font-weight="600" fill="#4f46e5">☕ Break: 12:30 - 13:30</text>
+  <rect x="1035" y="482" width="60" height="24" rx="12" fill="#10b981"/>
+  <circle cx="1080" cy="494" r="9" fill="#ffffff"/>
+  
+  <!-- Fri -->
+  <rect x="465" y="535" width="650" height="55" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="485" y="567" font-size="13" font-weight="700" fill="#0f172a">Friday</text>
+  <rect x="580" y="550" width="100" height="28" rx="5" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="600" y="569" font-size="12" fill="#334155">09:00 AM</text>
+  <text x="690" y="569" font-size="12" fill="#64748b">to</text>
+  <rect x="715" y="550" width="100" height="28" rx="5" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="735" y="569" font-size="12" fill="#334155">05:00 PM</text>
+  <rect x="840" y="550" width="165" height="28" rx="5" fill="#eef2ff"/>
+  <text x="855" y="568" font-size="11" font-weight="600" fill="#4f46e5">☕ Break: 12:30 - 13:30</text>
+  <rect x="1035" y="552" width="60" height="24" rx="12" fill="#10b981"/>
+  <circle cx="1080" cy="564" r="9" fill="#ffffff"/>
+  
+  <!-- Save Button -->
+  <rect x="990" y="660" width="125" height="40" rx="6" fill="#4f46e5"/>
+  <text x="1015" y="685" font-size="13" font-weight="600" fill="#ffffff">Save Schedule</text>
+</svg>

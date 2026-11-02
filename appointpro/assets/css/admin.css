@@ -1,0 +1,475 @@
+/**
+ * AppointPro Admin Dashboard Stylesheet
+ * Clean SaaS-grade Design System
+ */
+
+:root {
+    --ap-primary: #4f46e5;
+    --ap-primary-hover: #4338ca;
+    --ap-primary-light: #eef2ff;
+    --ap-secondary: #06b6d4;
+    --ap-success: #10b981;
+    --ap-success-light: #ecfdf5;
+    --ap-warning: #f59e0b;
+    --ap-warning-light: #fffbeb;
+    --ap-danger: #ef4444;
+    --ap-danger-light: #fef2f2;
+    --ap-bg: #f8fafc;
+    --ap-card-bg: #ffffff;
+    --ap-border: #e2e8f0;
+    --ap-text-main: #0f172a;
+    --ap-text-muted: #64748b;
+    --ap-radius-sm: 6px;
+    --ap-radius: 10px;
+    --ap-radius-lg: 16px;
+    --ap-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --ap-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    --ap-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+}
+
+#appointpro-admin-root {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ap-text-main);
+    background: var(--ap-bg);
+    min-height: calc(100vh - 80px);
+    margin-right: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+#appointpro-admin-root * {
+    box-sizing: border-box;
+}
+
+/* Navigation Header */
+.ap-admin-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ap-header {
+    background: var(--ap-card-bg);
+    border: 1px solid var(--ap-border);
+    border-radius: var(--ap-radius);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--ap-shadow-sm);
+}
+
+.ap-header-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ap-header-brand h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--ap-text-main);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ap-header-badge {
+    background: var(--ap-primary-light);
+    color: var(--ap-primary);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 999px;
+    text-transform: uppercase;
+}
+
+.ap-nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    background: var(--ap-card-bg);
+    border: 1px solid var(--ap-border);
+    border-radius: var(--ap-radius);
+    padding: 8px;
+    box-shadow: var(--ap-shadow-sm);
+}
+
+.ap-nav-tab {
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ap-text-muted);
+    border: none;
+    background: transparent;
+    border-radius: var(--ap-radius-sm);
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.ap-nav-tab:hover {
+    color: var(--ap-primary);
+    background: var(--ap-primary-light);
+}
+
+.ap-nav-tab.active {
+    background: var(--ap-primary);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Stats / KPI Cards */
+.ap-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.ap-stat-card {
+    background: var(--ap-card-bg);
+    border: 1px solid var(--ap-border);
+    border-radius: var(--ap-radius);
+    padding: 20px;
+    box-shadow: var(--ap-shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: transform 0.15s ease;
+}
+
+.ap-stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--ap-shadow);
+}
+
+.ap-stat-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--ap-text-muted);
+    letter-spacing: 0.05em;
+}
+
+.ap-stat-value {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--ap-text-main);
+    line-height: 1.2;
+}
+
+.ap-stat-sub {
+    font-size: 12px;
+    color: var(--ap-text-muted);
+}
+
+/* Content Card */
+.ap-card {
+    background: var(--ap-card-bg);
+    border: 1px solid var(--ap-border);
+    border-radius: var(--ap-radius);
+    padding: 24px;
+    box-shadow: var(--ap-shadow-sm);
+}
+
+.ap-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ap-card-title {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--ap-text-main);
+}
+
+/* Tables */
+.ap-table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--ap-border);
+    border-radius: var(--ap-radius-sm);
+}
+
+.ap-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    text-align: left;
+}
+
+.ap-table th {
+    background: #f1f5f9;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: var(--ap-text-muted);
+    border-bottom: 1px solid var(--ap-border);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+}
+
+.ap-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--ap-border);
+    color: var(--ap-text-main);
+    vertical-align: middle;
+}
+
+.ap-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.ap-table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Badges */
+.ap-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 9px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.ap-badge-confirmed, .ap-badge-paid, .ap-badge-active {
+    background: var(--ap-success-light);
+    color: #065f46;
+}
+
+.ap-badge-pending, .ap-badge-partial {
+    background: var(--ap-warning-light);
+    color: #92400e;
+}
+
+.ap-badge-cancelled, .ap-badge-rejected, .ap-badge-failed {
+    background: var(--ap-danger-light);
+    color: #991b1b;
+}
+
+.ap-badge-unpaid, .ap-badge-inactive {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+/* Buttons */
+.ap-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: var(--ap-radius-sm);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.15s ease-in-out;
+    text-decoration: none;
+}
+
+.ap-btn-primary {
+    background: var(--ap-primary);
+    color: #ffffff;
+}
+
+.ap-btn-primary:hover {
+    background: var(--ap-primary-hover);
+    color: #ffffff;
+}
+
+.ap-btn-secondary {
+    background: #ffffff;
+    border-color: var(--ap-border);
+    color: var(--ap-text-main);
+}
+
+.ap-btn-secondary:hover {
+    background: #f8fafc;
+}
+
+.ap-btn-danger {
+    background: var(--ap-danger-light);
+    color: var(--ap-danger);
+    border-color: #fca5a5;
+}
+
+.ap-btn-danger:hover {
+    background: var(--ap-danger);
+    color: #ffffff;
+}
+
+.ap-btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+/* Form Controls */
+.ap-form-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.ap-form-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ap-text-main);
+}
+
+.ap-form-input, .ap-form-select, .ap-form-textarea {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 13px;
+    border: 1px solid var(--ap-border);
+    border-radius: var(--ap-radius-sm);
+    background: #ffffff;
+    color: var(--ap-text-main);
+    outline: none;
+    transition: border-color 0.15s;
+}
+
+.ap-form-input:focus, .ap-form-select:focus, .ap-form-textarea:focus {
+    border-color: var(--ap-primary);
+    box-shadow: 0 0 0 2px var(--ap-primary-light);
+}
+
+.ap-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* Modal Dialog */
+.ap-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 23, 42, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100000;
+    backdrop-filter: blur(2px);
+}
+
+.ap-modal-content {
+    background: var(--ap-card-bg);
+    border-radius: var(--ap-radius-lg);
+    width: 100%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: var(--ap-shadow-lg);
+    display: flex;
+    flex-direction: column;
+}
+
+.ap-modal-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--ap-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ap-modal-header h3 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.ap-modal-body {
+    padding: 24px;
+    flex: 1;
+}
+
+.ap-modal-footer {
+    padding: 16px 24px;
+    border-top: 1px solid var(--ap-border);
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Calendar Month View Grid */
+.ap-calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 1px solid var(--ap-border);
+    border-radius: var(--ap-radius-sm);
+    overflow: hidden;
+}
+
+.ap-calendar-header-cell {
+    background: #f1f5f9;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--ap-text-muted);
+    border-bottom: 1px solid var(--ap-border);
+}
+
+.ap-calendar-cell {
+    min-height: 90px;
+    padding: 8px;
+    border-right: 1px solid var(--ap-border);
+    border-bottom: 1px solid var(--ap-border);
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ap-calendar-cell:nth-child(7n) {
+    border-right: none;
+}
+
+.ap-calendar-date-number {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ap-text-muted);
+}
+
+.ap-calendar-event {
+    background: var(--ap-primary-light);
+    border-left: 3px solid var(--ap-primary);
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    color: var(--ap-text-main);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* RTL Support */
+[dir="rtl"] #appointpro-admin-root {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+[dir="rtl"] .ap-table {
+    text-align: right;
+}
+
+[dir="rtl"] .ap-calendar-event {
+    border-left: none;
+    border-right: 3px solid var(--ap-primary);
+}

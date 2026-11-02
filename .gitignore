@@ -1,0 +1,14 @@
+# Dependencies & Build Artefacts
+dist/
+node_modules/
+.phpunit.cache/
+.phpunit.result.cache
+
+# Operating System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Log files
+*.log

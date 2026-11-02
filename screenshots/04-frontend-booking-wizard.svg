@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 780" width="1000" height="780" style="background:#f1f5f9; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <!-- Browser Chrome Preview -->
+  <rect x="50" y="30" width="900" height="720" rx="14" fill="#ffffff" stroke="#e2e8f0" filter="drop-shadow(0 15px 30px rgba(0,0,0,0.08))"/>
+  
+  <!-- Browser Header -->
+  <rect x="50" y="30" width="900" height="50" rx="14 14 0 0" fill="#f8fafc" stroke="#e2e8f0"/>
+  <circle cx="80" cy="55" r="5" fill="#ef4444"/>
+  <circle cx="96" cy="55" r="5" fill="#f59e0b"/>
+  <circle cx="112" cy="55" r="5" fill="#10b981"/>
+  
+  <!-- URL Bar -->
+  <rect x="220" y="42" width="560" height="26" rx="6" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="360" y="59" font-size="12" fill="#64748b">🔒 https://yourdomain.com/book-now</text>
+  
+  <!-- Wizard Container -->
+  <rect x="110" y="110" width="780" height="600" rx="12" fill="#ffffff" stroke="#e2e8f0" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.04))"/>
+  
+  <!-- Step Progress -->
+  <circle cx="180" cy="155" r="16" fill="#4f46e5"/>
+  <text x="175" y="160" font-size="12" font-weight="700" fill="#ffffff">1</text>
+  <text x="162" y="185" font-size="11" font-weight="600" fill="#4f46e5">Service</text>
+  
+  <line x1="205" y1="155" x2="275" y2="155" stroke="#e2e8f0" stroke-width="2"/>
+  <circle cx="300" cy="155" r="16" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="296" y="160" font-size="12" font-weight="700" fill="#64748b">2</text>
+  <text x="286" y="185" font-size="11" fill="#64748b">Staff</text>
+  
+  <line x1="325" y1="155" x2="395" y2="155" stroke="#e2e8f0" stroke-width="2"/>
+  <circle cx="420" cy="155" r="16" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="416" y="160" font-size="12" font-weight="700" fill="#64748b">3</text>
+  <text x="408" y="185" font-size="11" fill="#64748b">Time</text>
+  
+  <line x1="445" y1="155" x2="515" y2="155" stroke="#e2e8f0" stroke-width="2"/>
+  <circle cx="540" cy="155" r="16" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="536" y="160" font-size="12" font-weight="700" fill="#64748b">4</text>
+  <text x="526" y="185" font-size="11" fill="#64748b">Extras</text>
+  
+  <line x1="565" y1="155" x2="635" y2="155" stroke="#e2e8f0" stroke-width="2"/>
+  <circle cx="660" cy="155" r="16" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="656" y="160" font-size="12" font-weight="700" fill="#64748b">5</text>
+  <text x="646" y="185" font-size="11" fill="#64748b">Details</text>
+  
+  <line x1="685" y1="155" x2="755" y2="155" stroke="#e2e8f0" stroke-width="2"/>
+  <circle cx="780" cy="155" r="16" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="776" y="160" font-size="12" font-weight="700" fill="#64748b">6</text>
+  <text x="760" y="185" font-size="11" fill="#64748b">Payment</text>
+  
+  <!-- Step 1 Content Header -->
+  <text x="150" y="235" font-size="20" font-weight="700" fill="#0f172a">Select a Service</text>
+  <text x="150" y="255" font-size="13" fill="#64748b">Please select from our available treatments and consultations:</text>
+  
+  <!-- Category 1 Title -->
+  <text x="150" y="295" font-size="14" font-weight="700" fill="#4f46e5">HAIR &amp; STYLING</text>
+  
+  <!-- Service Card 1 (Selected) -->
+  <rect x="150" y="310" width="335" height="110" rx="10" fill="#f5f3ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="170" y="340" font-size="15" font-weight="700" fill="#0f172a">Master Executive Haircut</text>
+  <text x="170" y="365" font-size="12" fill="#64748b">Precision cut, shampoo, styling &amp; scalp massage.</text>
+  <text x="170" y="398" font-size="12" font-weight="600" fill="#64748b">⏱ 45 mins</text>
+  <text x="410" y="398" font-size="16" font-weight="700" fill="#4f46e5">$45.00</text>
+  
+  <!-- Service Card 2 -->
+  <rect x="505" y="310" width="335" height="110" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="525" y="340" font-size="15" font-weight="700" fill="#0f172a">Beard Trim &amp; Hot Towel</text>
+  <text x="525" y="365" font-size="12" fill="#64748b">Traditional hot towel shave and beard grooming.</text>
+  <text x="525" y="398" font-size="12" font-weight="600" fill="#64748b">⏱ 30 mins</text>
+  <text x="765" y="398" font-size="16" font-weight="700" fill="#0f172a">$25.00</text>
+  
+  <!-- Category 2 Title -->
+  <text x="150" y="455" font-size="14" font-weight="700" fill="#10b981">WELLNESS &amp; SPA</text>
+  
+  <!-- Service Card 3 -->
+  <rect x="150" y="470" width="335" height="110" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="170" y="500" font-size="15" font-weight="700" fill="#0f172a">Deep Tissue Massage</text>
+  <text x="170" y="525" font-size="12" fill="#64748b">60-minute therapeutic massage with organic oils.</text>
+  <text x="170" y="558" font-size="12" font-weight="600" fill="#64748b">⏱ 60 mins</text>
+  <text x="410" y="558" font-size="16" font-weight="700" fill="#0f172a">$85.00</text>
+  
+  <!-- Service Card 4 -->
+  <rect x="505" y="470" width="335" height="110" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="525" y="500" font-size="15" font-weight="700" fill="#0f172a">Aromatherapy Relaxation</text>
+  <text x="525" y="525" font-size="12" fill="#64748b">Gentle relaxation therapy with custom fragrances.</text>
+  <text x="525" y="558" font-size="12" font-weight="600" fill="#64748b">⏱ 75 mins</text>
+  <text x="765" y="558" font-size="16" font-weight="700" fill="#0f172a">$95.00</text>
+  
+  <!-- Wizard Footer Controls -->
+  <line x1="150" y1="620" x2="840" y2="620" stroke="#f1f5f9"/>
+  <rect x="715" y="640" width="125" height="42" rx="8" fill="#4f46e5"/>
+  <text x="735" y="666" font-size="14" font-weight="600" fill="#ffffff">Continue →</text>
+</svg>

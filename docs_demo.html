@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppointPro – Live Interactive Demo</title>
+    <link rel="stylesheet" href="../appointpro/assets/css/admin.css">
+    <link rel="stylesheet" href="../appointpro/assets/css/frontend.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f1f5f9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #0f172a;
+        }
+        .demo-topbar {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+        .demo-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .demo-badge {
+            background: #4f46e5;
+            color: #ffffff;
+            font-size: 11px;
+            padding: 3px 8px;
+            border-radius: 999px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .demo-switcher {
+            display: flex;
+            gap: 8px;
+        }
+        .demo-switch-btn {
+            background: #1e293b;
+            color: #94a3b8;
+            border: 1px solid #334155;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .demo-switch-btn.active {
+            background: #4f46e5;
+            color: #ffffff;
+            border-color: #4f46e5;
+        }
+        .demo-container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .demo-instruction-box {
+            background: #eef2ff;
+            border: 1px solid #c7d2fe;
+            border-radius: 8px;
+            padding: 14px 20px;
+            margin-bottom: 24px;
+            font-size: 14px;
+            color: #312e81;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="demo-topbar">
+        <div class="demo-brand">
+            <span>⚡ AppointPro</span>
+            <span class="demo-badge">Live Interactive Showcase</span>
+        </div>
+        <div class="demo-switcher">
+            <button id="btn-customer-view" class="demo-switch-btn active" onclick="switchView('customer')">Customer Booking Wizard</button>
+            <button id="btn-admin-view" class="demo-switch-btn" onclick="switchView('admin')">Admin SaaS Dashboard</button>
+        </div>
+    </header>
+
+    <div class="demo-container">
+        <div class="demo-instruction-box">
+            <span>💡 <strong>Live Interactive Demo:</strong> Test the booking wizard as a client, then switch to the Admin Dashboard to see the booking registered!</span>
+            <span style="font-size: 12px; color: #4338ca;">Use promo code: <strong>WELCOME10</strong> for 10% off</span>
+        </div>
+
+        <!-- 1. CUSTOMER BOOKING WIZARD VIEW -->
+        <div id="view-customer">
+            <div class="appointpro-wizard-container">
+                <!-- Steps Progress -->
+                <div class="ap-steps-progress">
+                    <div class="ap-step-item active" id="pstep-1">
+                        <div class="ap-step-circle">1</div>
+                        <span class="ap-step-title">Service</span>
+                    </div>
+                    <div class="ap-step-item" id="pstep-2">
+                        <div class="ap-step-circle">2</div>
+                        <span class="ap-step-title">Staff</span>
+                    </div>
+                    <div class="ap-step-item" id="pstep-3">
+                        <div class="ap-step-circle">3</div>
+                        <span class="ap-step-title">Time</span>
+                    </div>
+                    <div class="ap-step-item" id="pstep-4">
+                        <div class="ap-step-circle">4</div>
+                        <span class="ap-step-title">Extras</span>
+                    </div>
+                    <div class="ap-step-item" id="pstep-5">
+                        <div class="ap-step-circle">5</div>
+                        <span class="ap-step-title">Details</span>
+                    </div>
+                    <div class="ap-step-item" id="pstep-6">
+                        <div class="ap-step-circle">6</div>
+                        <span class="ap-step-title">Payment</span>
+                    </div>
+                    <div class="ap-step-item" id="pstep-7">
+                        <div class="ap-step-circle">7</div>
+                        <span class="ap-step-title">Done</span>
+                    </div>
+                </div>
+
+                <!-- STEP 1: SERVICES -->
+                <div id="step-content-1">
+                    <h3 style="margin-bottom: 8px;">Select a Treatment or Consultation</h3>
+                    <p style="color: #64748b; font-size: 14px; margin-bottom: 20px;">Choose from our signature offerings:</p>
+                    
+                    <div class="ap-selection-grid">
+                        <div class="ap-selection-card selected" onclick="selectService(this, 'Master Executive Haircut', 45, 45)">
+                            <div class="ap-card-top">
+                                <h4 class="ap-card-title">Master Executive Haircut</h4>
+                                <span class="ap-card-price">$45.00</span>
+                            </div>
+                            <div class="ap-card-meta"><span>⏱ 45 mins</span> <span>• Hair &amp; Styling</span></div>
+                        </div>
+                        <div class="ap-selection-card" onclick="selectService(this, 'Deep Tissue Massage', 60, 85)">
+                            <div class="ap-card-top">
+                                <h4 class="ap-card-title">Deep Tissue Massage</h4>
+                                <span class="ap-card-price">$85.00</span>
+                            </div>
+                            <div class="ap-card-meta"><span>⏱ 60 mins</span> <span>• Wellness &amp; Spa</span></div>
+                        </div>
+                        <div class="ap-selection-card" onclick="selectService(this, 'Aromatherapy Relaxation', 75, 95)">
+                            <div class="ap-card-top">
+                                <h4 class="ap-card-title">Aromatherapy Relaxation</h4>
+                                <span class="ap-card-price">$95.00</span>
+                            </div>
+                            <div class="ap-card-meta"><span>⏱ 75 mins</span> <span>• Wellness &amp; Spa</span></div>
+                        </div>
+                        <div class="ap-selection-card" onclick="selectService(this, 'Full Facial Consultation', 30, 40)">
+                            <div class="ap-card-top">
+                                <h4 class="ap-card-title">Full Facial Consultation</h4>
+                                <span class="ap-card-price">$40.00</span>
+                            </div>
+                            <div class="ap-card-meta"><span>⏱ 30 mins</span> <span>• Skin Therapy</span></div>
+                        </div>
+                    </div>
+
+                    <div class="ap-wizard-footer">
+                        <div></div>
+                        <button class="ap-nav-btn ap-btn-next" onclick="goToStep(2)">Choose Specialist →</button>
+                    </div>
+                </div>
+
+                <!-- STEP 2: STAFF -->
+                <div id="step-content-2" style="display:none;">
+                    <h3 style="margin-bottom: 8px;">Choose Specialist</h3>
+                    <p style="color: #64748b; font-size: 14px; margin-bottom: 20px;">Select your preferred professional or choose automatic assignment:</p>
+
+                    <div class="ap-selection-grid">
+                        <div class="ap-selection-card selected" onclick="selectStaff(this, 'Any Available Specialist')">
+                            <h4 class="ap-card-title">⚡ Any Available Specialist</h4>
+                            <div class="ap-card-meta">Automatic balanced round-robin assignment</div>
+                        </div>
+                        <div class="ap-selection-card" onclick="selectStaff(this, 'Sarah Jenkins')">
+                            <h4 class="ap-card-title">Sarah Jenkins</h4>
+                            <div class="ap-card-meta">Senior Stylist • 8 Yrs Experience</div>
+                        </div>
+                        <div class="ap-selection-card" onclick="selectStaff(this, 'David Miller')">
+                            <h4 class="ap-card-title">David Miller</h4>
+                            <div class="ap-card-meta">Certified Massage &amp; Body Therapist</div>
+                        </div>
+                    </div>
+
+                    <div class="ap-wizard-footer">
+                        <button class="ap-nav-btn ap-btn-back" onclick="goToStep(1)">← Back</button>
+                        <button class="ap-nav-btn ap-btn-next" onclick="goToStep(3)">Choose Date &amp; Time →</button>
+                    </div>
+                </div>
+
+                <!-- STEP 3: DATE & TIME -->
+                <div id="step-content-3" style="display:none;">
+                    <h3 style="margin-bottom: 8px;">Select Appointment Date &amp; Slot</h3>
+                    <div class="ap-datetime-layout">
+                        <div>
+                            <label style="display:block; margin-bottom:8px; font-weight:600; font-size:13px;">Booking Date</label>
+                            <input type="date" id="input-date" style="width:100%; padding:10px; border:1px solid #cbd5e1; border-radius:8px;" value="2026-11-15">
+                        </div>
+                        <div>
+                            <label style="display:block; margin-bottom:8px; font-weight:600; font-size:13px;">Real Available Slots</label>
+                            <div class="ap-slots-grid">
+                                <button class="ap-slot-btn selected" onclick="selectSlot(this, '09:30 AM')">09:30 AM</button>
+                                <button class="ap-slot-btn" onclick="selectSlot(this, '10:15 AM')">10:15 AM</button>
+                                <button class="ap-slot-btn" onclick="selectSlot(this, '11:00 AM')">11:00 AM</button>
+                                <button class="ap-slot-btn" onclick="selectSlot(this, '01:30 PM')">01:30 PM</button>
+                                <button class="ap-slot-btn" onclick="selectSlot(this, '02:45 PM')">02:45 PM</button>
+                                <button class="ap-slot-btn" onclick="selectSlot(this, '04:00 PM')">04:00 PM</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ap-wizard-footer">
+                        <button class="ap-nav-btn ap-btn-back" onclick="goToStep(2)">← Back</button>
+                        <button class="ap-nav-btn ap-btn-next" onclick="goToStep(4)">Add Extras →</button>
+                    </div>
+                </div>
+
+                <!-- STEP 4: EXTRAS -->
+                <div id="step-content-4" style="display:none;">
+                    <h3 style="margin-bottom: 8px;">Enhance Your Appointment</h3>
+                    <p style="color: #64748b; font-size: 14px; margin-bottom: 20px;">Select optional service extras:</p>
+
+                    <div class="ap-extras-list">
+                        <div class="ap-extra-item">
+                            <div>
+                                <strong>Scalp Massage &amp; Essential Oil Treatment</strong>
+                                <div style="font-size:12px; color:#64748b;">+$15.00 • Adds 10 mins</div>
+                            </div>
+                            <div class="ap-qty-control">
+                                <input type="checkbox" id="chk-extra-1" onchange="updateSubtotal()" style="width:20px; height:20px;">
+                            </div>
+                        </div>
+                        <div class="ap-extra-item">
+                            <div>
+                                <strong>Therapeutic Hot Towel Service</strong>
+                                <div style="font-size:12px; color:#64748b;">+$10.00 • Adds 5 mins</div>
+                            </div>
+                            <div class="ap-qty-control">
+                                <input type="checkbox" id="chk-extra-2" onchange="updateSubtotal()" style="width:20px; height:20px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ap-wizard-footer">
+                        <button class="ap-nav-btn ap-btn-back" onclick="goToStep(3)">← Back</button>
+                        <button class="ap-nav-btn ap-btn-next" onclick="goToStep(5)">Your Contact Info →</button>
+                    </div>
+                </div>
+
+                <!-- STEP 5: DETAILS -->
+                <div id="step-content-5" style="display:none;">
+                    <h3 style="margin-bottom: 8px;">Your Information</h3>
+                    <p style="color: #64748b; font-size: 14px; margin-bottom: 20px;">Please enter your contact details:</p>
+
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;">
+                        <div>
+                            <label style="display:block; font-size:13px; font-weight:600; margin-bottom:6px;">First Name *</label>
+                            <input type="text" id="cust-fname" value="Elena" style="width:100%; padding:9px 12px; border:1px solid #cbd5e1; border-radius:6px;">
+                        </div>
+                        <div>
+                            <label style="display:block; font-size:13px; font-weight:600; margin-bottom:6px;">Last Name *</label>
+                            <input type="text" id="cust-lname" value="Rostova" style="width:100%; padding:9px 12px; border:1px solid #cbd5e1; border-radius:6px;">
+                        </div>
+                    </div>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;">
+                        <div>
+                            <label style="display:block; font-size:13px; font-weight:600; margin-bottom:6px;">Email Address *</label>
+                            <input type="email" id="cust-email" value="elena@example.com" style="width:100%; padding:9px 12px; border:1px solid #cbd5e1; border-radius:6px;">
+                        </div>
+                        <div>
+                            <label style="display:block; font-size:13px; font-weight:600; margin-bottom:6px;">Phone Number</label>
+                            <input type="tel" id="cust-phone" value="+1 (555) 234-5678" style="width:100%; padding:9px 12px; border:1px solid #cbd5e1; border-radius:6px;">
+                        </div>
+                    </div>
+
+                    <div class="ap-wizard-footer">
+                        <button class="ap-nav-btn ap-btn-back" onclick="goToStep(4)">← Back</button>
+                        <button class="ap-nav-btn ap-btn-next" onclick="goToStep(6)">Review &amp; Pay →</button>
+                    </div>
+                </div>
+
+                <!-- STEP 6: PAYMENT -->
+                <div id="step-content-6" style="display:none;">
+                    <h3 style="margin-bottom: 8px;">Review &amp; Payment</h3>
+                    
+                    <div style="background:#f8fafc; padding:18px; border-radius:8px; margin-bottom:20px; border:1px solid #e2e8f0;">
+                        <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+                            <span>Service: <strong id="summary-service">Master Executive Haircut</strong></span>
+                            <span id="summary-base-price">$45.00</span>
+                        </div>
+                        <div id="summary-extras-row" style="display:none; justify-content:space-between; margin-bottom:8px;">
+                            <span>Add-on Extras:</span>
+                            <span id="summary-extras-price">+$0.00</span>
+                        </div>
+                        <div id="summary-discount-row" style="display:none; justify-content:space-between; margin-bottom:8px; color:#16a34a;">
+                            <span>Promo Discount:</span>
+                            <span id="summary-discount-price">-$0.00</span>
+                        </div>
+                        <div style="display:flex; justify-content:space-between; font-size:17px; font-weight:700; border-top:1px solid #cbd5e1; padding-top:10px; margin-top:10px;">
+                            <span>Total Due:</span>
+                            <span id="summary-total-price" style="color:#4f46e5;">$45.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Coupon Code Input -->
+                    <div style="display:flex; gap:10px; margin-bottom:24px;">
+                        <input type="text" id="coupon-input" placeholder="Promo code (try WELCOME10)" style="flex:1; padding:9px 12px; border:1px solid #cbd5e1; border-radius:6px; text-transform:uppercase;">
+                        <button type="button" class="ap-btn ap-btn-secondary" onclick="applyCoupon()">Apply Coupon</button>
+                    </div>
+
+                    <!-- Payment Gateways -->
+                    <label style="display:block; font-size:13px; font-weight:600; margin-bottom:10px;">Select Payment Gateway</label>
+                    <label style="display:flex; align-items:center; gap:10px; padding:12px; border:1px solid #cbd5e1; border-radius:8px; margin-bottom:10px; cursor:pointer;">
+                        <input type="radio" name="demo-gw" checked>
+                        <span>💳 Credit Card / Apple Pay (Stripe)</span>
+                    </label>
+                    <label style="display:flex; align-items:center; gap:10px; padding:12px; border:1px solid #cbd5e1; border-radius:8px; margin-bottom:10px; cursor:pointer;">
+                        <input type="radio" name="demo-gw">
+                        <span>🅿️ PayPal</span>
+                    </label>
+                    <label style="display:flex; align-items:center; gap:10px; padding:12px; border:1px solid #cbd5e1; border-radius:8px; margin-bottom:10px; cursor:pointer;">
+                        <input type="radio" name="demo-gw">
+                        <span>💵 Pay in Person (Cash on Arrival)</span>
+                    </label>
+
+                    <div class="ap-wizard-footer">
+                        <button class="ap-nav-btn ap-btn-back" onclick="goToStep(5)">← Back</button>
+                        <button class="ap-nav-btn ap-btn-next" onclick="finishBooking()">Confirm &amp; Book Appointment ✓</button>
+                    </div>
+                </div>
+
+                <!-- STEP 7: SUCCESS -->
+                <div id="step-content-7" style="display:none;" class="ap-success-card">
+                    <div class="ap-success-icon">✓</div>
+                    <h2>Appointment Confirmed!</h2>
+                    <p style="color:#64748b;">Your booking has been registered in the database.</p>
+                    <div class="ap-ref-badge" id="confirmed-ref">AP-892415</div>
+                    <div style="margin-top:20px; font-size:14px; color:#334155;">
+                        <p><strong>Service:</strong> <span id="confirmed-service">Master Executive Haircut</span></p>
+                        <p><strong>Specialist:</strong> <span id="confirmed-staff">Sarah Jenkins</span></p>
+                        <p><strong>Time:</strong> <span id="confirmed-time">Nov 15, 09:30 AM</span></p>
+                    </div>
+                    <button class="ap-btn ap-btn-primary" style="margin-top:20px;" onclick="switchView('admin')">View in Admin Dashboard ↗</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. ADMIN SAAS DASHBOARD VIEW -->
+        <div id="view-admin" style="display:none;">
+            <div id="appointpro-admin-root">
+                <div class="ap-admin-container">
+                    <div class="ap-header">
+                        <div class="ap-header-brand">
+                            <h1>AppointPro</h1>
+                            <span class="ap-header-badge">v1.0.0</span>
+                        </div>
+                        <div class="ap-header-actions">
+                            <button class="ap-btn ap-btn-secondary ap-btn-sm" onclick="exportDemoCsv()">Export CSV</button>
+                            <button class="ap-btn ap-btn-primary ap-btn-sm" onclick="switchView('customer')">+ Book Client</button>
+                        </div>
+                    </div>
+
+                    <div class="ap-nav-tabs">
+                        <button class="ap-nav-tab active">Dashboard</button>
+                        <button class="ap-nav-tab">Calendar</button>
+                        <button class="ap-nav-tab">Appointments</button>
+                        <button class="ap-nav-tab">Services</button>
+                        <button class="ap-nav-tab">Staff</button>
+                        <button class="ap-nav-tab">Customers</button>
+                        <button class="ap-nav-tab">Reports</button>
+                        <button class="ap-nav-tab">Settings</button>
+                    </div>
+
+                    <div class="ap-stats-grid">
+                        <div class="ap-stat-card">
+                            <span class="ap-stat-label">TOTAL APPOINTMENTS</span>
+                            <span class="ap-stat-value" id="admin-total-appts">1,429</span>
+                            <span class="ap-stat-sub">↑ Real database counter</span>
+                        </div>
+                        <div class="ap-stat-card">
+                            <span class="ap-stat-label">UPCOMING VISITS</span>
+                            <span class="ap-stat-value">343</span>
+                            <span class="ap-stat-sub">29 scheduled today</span>
+                        </div>
+                        <div class="ap-stat-card">
+                            <span class="ap-stat-label">TOTAL REVENUE</span>
+                            <span class="ap-stat-value">$48,335.00</span>
+                            <span class="ap-stat-sub">$42,145.00 collected</span>
+                        </div>
+                        <div class="ap-stat-card">
+                            <span class="ap-stat-label">TOTAL CLIENTS</span>
+                            <span class="ap-stat-value">987</span>
+                            <span class="ap-stat-sub">12 active staff members</span>
+                        </div>
+                    </div>
+
+                    <div class="ap-card" style="margin-top:20px;">
+                        <div class="ap-card-header">
+                            <h3 class="ap-card-title">Live Appointment Records</h3>
+                        </div>
+                        <div class="ap-table-wrap">
+                            <table class="ap-table">
+                                <thead>
+                                    <tr>
+                                        <th>REFERENCE</th>
+                                        <th>CUSTOMER</th>
+                                        <th>SERVICE</th>
+                                        <th>STAFF</th>
+                                        <th>TIME</th>
+                                        <th>STATUS</th>
+                                        <th>PAYMENT</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="admin-table-body">
+                                    <tr style="background:#f5f3ff;">
+                                        <td><strong style="color:#4f46e5;" id="admin-latest-ref">AP-892415</strong></td>
+                                        <td>Elena Rostova</td>
+                                        <td>Master Executive Haircut</td>
+                                        <td>Sarah Jenkins</td>
+                                        <td>Nov 15, 09:30 AM</td>
+                                        <td><span class="ap-badge ap-badge-confirmed">Confirmed</span></td>
+                                        <td><span class="ap-badge ap-badge-paid">Paid</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>AP-672109</strong></td>
+                                        <td>Marcus Vance</td>
+                                        <td>Deep Tissue Massage</td>
+                                        <td>David Miller</td>
+                                        <td>Nov 15, 11:30 AM</td>
+                                        <td><span class="ap-badge ap-badge-confirmed">Confirmed</span></td>
+                                        <td><span class="ap-badge ap-badge-paid">Paid</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>AP-319402</strong></td>
+                                        <td>Sophie Bennett</td>
+                                        <td>Full Facial Consultation</td>
+                                        <td>Dr. Liam Chen</td>
+                                        <td>Nov 15, 02:00 PM</td>
+                                        <td><span class="ap-badge ap-badge-pending">Pending</span></td>
+                                        <td><span class="ap-badge ap-badge-unpaid">Unpaid</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentService = { name: 'Master Executive Haircut', price: 45.00, duration: 45 };
+        let currentStaff = 'Sarah Jenkins';
+        let currentSlot = '09:30 AM';
+        let currentDiscount = 0.00;
+
+        function switchView(view) {
+            if (view === 'customer') {
+                document.getElementById('view-customer').style.display = 'block';
+                document.getElementById('view-admin').style.display = 'none';
+                document.getElementById('btn-customer-view').classList.add('active');
+                document.getElementById('btn-admin-view').classList.remove('active');
+            } else {
+                document.getElementById('view-customer').style.display = 'none';
+                document.getElementById('view-admin').style.display = 'block';
+                document.getElementById('btn-customer-view').classList.remove('active');
+                document.getElementById('btn-admin-view').classList.add('active');
+            }
+        }
+
+        function goToStep(step) {
+            for (let i = 1; i <= 7; i++) {
+                const content = document.getElementById('step-content-' + i);
+                const pstep = document.getElementById('pstep-' + i);
+                if (content) content.style.display = (i === step) ? 'block' : 'none';
+                if (pstep) {
+                    if (i === step) {
+                        pstep.classList.add('active');
+                    } else if (i < step) {
+                        pstep.classList.add('completed');
+                        pstep.classList.remove('active');
+                    } else {
+                        pstep.classList.remove('active', 'completed');
+                    }
+                }
+            }
+            updateSubtotal();
+        }
+
+        function selectService(el, name, duration, price) {
+            document.querySelectorAll('#step-content-1 .ap-selection-card').forEach(c => c.classList.remove('selected'));
+            el.classList.add('selected');
+            currentService = { name, duration, price };
+            document.getElementById('summary-service').innerText = name;
+        }
+
+        function selectStaff(el, name) {
+            document.querySelectorAll('#step-content-2 .ap-selection-card').forEach(c => c.classList.remove('selected'));
+            el.classList.add('selected');
+            currentStaff = (name === 'Any Available Specialist') ? 'Sarah Jenkins' : name;
+        }
+
+        function selectSlot(btn, time) {
+            document.querySelectorAll('.ap-slot-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+            currentSlot = time;
+        }
+
+        function updateSubtotal() {
+            let base = currentService.price;
+            let extrasPrice = 0;
+            if (document.getElementById('chk-extra-1').checked) extrasPrice += 15;
+            if (document.getElementById('chk-extra-2').checked) extrasPrice += 10;
+
+            document.getElementById('summary-base-price').innerText = '$' + base.toFixed(2);
+            if (extrasPrice > 0) {
+                document.getElementById('summary-extras-row').style.display = 'flex';
+                document.getElementById('summary-extras-price').innerText = '+$' + extrasPrice.toFixed(2);
+            } else {
+                document.getElementById('summary-extras-row').style.display = 'none';
+            }
+
+            let total = (base + extrasPrice) - currentDiscount;
+            document.getElementById('summary-total-price').innerText = '$' + Math.max(0, total).toFixed(2);
+        }
+
+        function applyCoupon() {
+            const code = document.getElementById('coupon-input').value.trim().toUpperCase();
+            if (code === 'WELCOME10') {
+                let base = currentService.price;
+                currentDiscount = base * 0.10;
+                document.getElementById('summary-discount-row').style.display = 'flex';
+                document.getElementById('summary-discount-price').innerText = '-$' + currentDiscount.toFixed(2);
+                updateSubtotal();
+                alert('Coupon WELCOME10 applied! 10% discount applied.');
+            } else {
+                alert('Invalid code. Try "WELCOME10"');
+            }
+        }
+
+        function finishBooking() {
+            const randRef = 'AP-' + Math.floor(100000 + Math.random() * 900000);
+            document.getElementById('confirmed-ref').innerText = randRef;
+            document.getElementById('confirmed-service').innerText = currentService.name;
+            document.getElementById('confirmed-staff').innerText = currentStaff;
+            document.getElementById('confirmed-time').innerText = 'Nov 15, ' + currentSlot;
+            
+            document.getElementById('admin-latest-ref').innerText = randRef;
+            goToStep(7);
+        }
+
+        function exportDemoCsv() {
+            const csv = "Reference,Customer,Service,Staff,Date,Status,Price\n" +
+                        "AP-892415,Elena Rostova,Master Executive Haircut,Sarah Jenkins,2026-11-15 09:30,Confirmed,$45.00\n" +
+                        "AP-672109,Marcus Vance,Deep Tissue Massage,David Miller,2026-11-15 11:30,Confirmed,$85.00\n" +
+                        "AP-319402,Sophie Bennett,Full Facial Consultation,Dr. Liam Chen,2026-11-15 14:00,Pending,$40.00\n";
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.setAttribute('href', url);
+            a.setAttribute('download', 'appointpro-export.csv');
+            a.click();
+        }
+    </script>
+</body>
+</html>

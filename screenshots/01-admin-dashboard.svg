@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" style="background:#f8fafc; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <!-- Window Frame -->
+  <rect x="0" y="0" width="1200" height="780" fill="#f8fafc"/>
+  <rect x="30" y="25" width="1140" height="730" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="drop-shadow(0 10px 25px rgba(0,0,0,0.06))"/>
+  
+  <!-- Header / Navigation -->
+  <path d="M 30 41 A 16 16 0 0 1 46 25 L 1154 25 A 16 16 0 0 1 1170 41 L 1170 95 L 30 95 Z" fill="#ffffff"/>
+  <line x1="30" y1="95" x2="1170" y2="95" stroke="#e2e8f0" stroke-width="1.5"/>
+  
+  <!-- Window Controls -->
+  <circle cx="60" cy="60" r="6" fill="#ef4444"/>
+  <circle cx="80" cy="60" r="6" fill="#f59e0b"/>
+  <circle cx="100" cy="60" r="6" fill="#10b981"/>
+  
+  <!-- App Title & Badge -->
+  <text x="135" y="66" font-size="20" font-weight="700" fill="#0f172a">AppointPro</text>
+  <rect x="255" y="49" width="60" height="22" rx="11" fill="#eef2ff"/>
+  <text x="268" y="64" font-size="11" font-weight="600" fill="#4f46e5">v1.0.0</text>
+  
+  <!-- Top Right Actions -->
+  <rect x="1010" y="46" width="130" height="30" rx="6" fill="#4f46e5"/>
+  <text x="1025" y="66" font-size="12" font-weight="600" fill="#ffffff">+ New Booking</text>
+  
+  <!-- Sub-Navigation Tabs Bar -->
+  <rect x="55" y="115" width="1090" height="48" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+  <rect x="62" y="121" width="100" height="36" rx="6" fill="#4f46e5"/>
+  <text x="88" y="144" font-size="13" font-weight="600" fill="#ffffff">Dashboard</text>
+  
+  <text x="185" y="144" font-size="13" font-weight="500" fill="#64748b">Calendar</text>
+  <text x="270" y="144" font-size="13" font-weight="500" fill="#64748b">Appointments</text>
+  <text x="385" y="144" font-size="13" font-weight="500" fill="#64748b">Services</text>
+  <text x="465" y="144" font-size="13" font-weight="500" fill="#64748b">Staff</text>
+  <text x="525" y="144" font-size="13" font-weight="500" fill="#64748b">Customers</text>
+  <text x="620" y="144" font-size="13" font-weight="500" fill="#64748b">Locations</text>
+  <text x="705" y="144" font-size="13" font-weight="500" fill="#64748b">Payments</text>
+  <text x="795" y="144" font-size="13" font-weight="500" fill="#64748b">Coupons</text>
+  <text x="880" y="144" font-size="13" font-weight="500" fill="#64748b">Reports</text>
+  <text x="955" y="144" font-size="13" font-weight="500" fill="#64748b">Settings</text>
+  
+  <!-- KPI Stat Cards -->
+  <!-- Card 1 -->
+  <rect x="55" y="180" width="255" height="105" rx="12" fill="#ffffff" stroke="#e2e8f0" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.03))"/>
+  <text x="75" y="210" font-size="12" font-weight="600" fill="#64748b" letter-spacing="0.5">TOTAL APPOINTMENTS</text>
+  <text x="75" y="248" font-size="28" font-weight="700" fill="#0f172a">1,428</text>
+  <text x="75" y="270" font-size="12" fill="#10b981">↑ +14% from last month</text>
+  
+  <!-- Card 2 -->
+  <rect x="333" y="180" width="255" height="105" rx="12" fill="#ffffff" stroke="#e2e8f0" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.03))"/>
+  <text x="353" y="210" font-size="12" font-weight="600" fill="#64748b" letter-spacing="0.5">UPCOMING VISITS</text>
+  <text x="353" y="248" font-size="28" font-weight="700" fill="#0f172a">342</text>
+  <text x="353" y="270" font-size="12" fill="#3b82f6">28 scheduled today</text>
+  
+  <!-- Card 3 -->
+  <rect x="611" y="180" width="255" height="105" rx="12" fill="#ffffff" stroke="#e2e8f0" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.03))"/>
+  <text x="631" y="210" font-size="12" font-weight="600" fill="#64748b" letter-spacing="0.5">TOTAL REVENUE</text>
+  <text x="631" y="248" font-size="28" font-weight="700" fill="#0f172a">$48,290.00</text>
+  <text x="631" y="270" font-size="12" fill="#10b981">$42,100.00 collected</text>
+  
+  <!-- Card 4 -->
+  <rect x="890" y="180" width="255" height="105" rx="12" fill="#ffffff" stroke="#e2e8f0" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.03))"/>
+  <text x="910" y="210" font-size="12" font-weight="600" fill="#64748b" letter-spacing="0.5">TOTAL CLIENTS</text>
+  <text x="910" y="248" font-size="28" font-weight="700" fill="#0f172a">986</text>
+  <text x="910" y="270" font-size="12" fill="#8b5cf6">12 active staff members</text>
+  
+  <!-- Main Content Card: Upcoming Appointments Table -->
+  <rect x="55" y="305" width="1090" height="420" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="80" y="342" font-size="17" font-weight="700" fill="#0f172a">Recent &amp; Upcoming Bookings</text>
+  <text x="80" y="362" font-size="12" fill="#64748b">Real-time database records and active customer appointments</text>
+  
+  <!-- Table Header -->
+  <rect x="75" y="380" width="1050" height="38" rx="6" fill="#f8fafc"/>
+  <text x="95" y="404" font-size="11" font-weight="700" fill="#64748b">REFERENCE</text>
+  <text x="210" y="404" font-size="11" font-weight="700" fill="#64748b">CUSTOMER</text>
+  <text x="400" y="404" font-size="11" font-weight="700" fill="#64748b">SERVICE</text>
+  <text x="610" y="404" font-size="11" font-weight="700" fill="#64748b">STAFF</text>
+  <text x="770" y="404" font-size="11" font-weight="700" fill="#64748b">DATE &amp; TIME</text>
+  <text x="930" y="404" font-size="11" font-weight="700" fill="#64748b">STATUS</text>
+  <text x="1040" y="404" font-size="11" font-weight="700" fill="#64748b">TOTAL</text>
+  
+  <!-- Row 1 -->
+  <line x1="75" y1="465" x2="1125" y2="465" stroke="#f1f5f9"/>
+  <text x="95" y="445" font-size="13" font-weight="700" fill="#4f46e5">AP-892415</text>
+  <text x="210" y="445" font-size="13" font-weight="600" fill="#0f172a">Elena Rostova</text>
+  <text x="400" y="445" font-size="13" fill="#334155">Master Executive Haircut</text>
+  <text x="610" y="445" font-size="13" fill="#334155">Sarah Jenkins</text>
+  <text x="770" y="445" font-size="13" fill="#334155">Nov 15, 10:00 AM</text>
+  <rect x="925" y="430" width="75" height="22" rx="11" fill="#ecfdf5"/>
+  <text x="937" y="445" font-size="11" font-weight="600" fill="#065f46">Confirmed</text>
+  <text x="1040" y="445" font-size="13" font-weight="600" fill="#0f172a">$45.00</text>
+  
+  <!-- Row 2 -->
+  <line x1="75" y1="515" x2="1125" y2="515" stroke="#f1f5f9"/>
+  <text x="95" y="495" font-size="13" font-weight="700" fill="#4f46e5">AP-672109</text>
+  <text x="210" y="495" font-size="13" font-weight="600" fill="#0f172a">Marcus Vance</text>
+  <text x="400" y="495" font-size="13" fill="#334155">Deep Tissue Massage</text>
+  <text x="610" y="495" font-size="13" fill="#334155">David Miller</text>
+  <text x="770" y="495" font-size="13" fill="#334155">Nov 15, 11:30 AM</text>
+  <rect x="925" y="480" width="75" height="22" rx="11" fill="#ecfdf5"/>
+  <text x="937" y="495" font-size="11" font-weight="600" fill="#065f46">Confirmed</text>
+  <text x="1040" y="495" font-size="13" font-weight="600" fill="#0f172a">$85.00</text>
+  
+  <!-- Row 3 -->
+  <line x1="75" y1="565" x2="1125" y2="565" stroke="#f1f5f9"/>
+  <text x="95" y="545" font-size="13" font-weight="700" fill="#4f46e5">AP-319402</text>
+  <text x="210" y="545" font-size="13" font-weight="600" fill="#0f172a">Sophie Bennett</text>
+  <text x="400" y="545" font-size="13" fill="#334155">Full Facial Consultation</text>
+  <text x="610" y="545" font-size="13" fill="#334155">Dr. Liam Chen</text>
+  <text x="770" y="545" font-size="13" fill="#334155">Nov 15, 02:00 PM</text>
+  <rect x="925" y="530" width="75" height="22" rx="11" fill="#fffbeb"/>
+  <text x="942" y="545" font-size="11" font-weight="600" fill="#92400e">Pending</text>
+  <text x="1040" y="545" font-size="13" font-weight="600" fill="#0f172a">$120.00</text>
+  
+  <!-- Row 4 -->
+  <line x1="75" y1="615" x2="1125" y2="615" stroke="#f1f5f9"/>
+  <text x="95" y="595" font-size="13" font-weight="700" fill="#4f46e5">AP-550921</text>
+  <text x="210" y="595" font-size="13" font-weight="600" fill="#0f172a">Tariq Al-Mansoor</text>
+  <text x="400" y="595" font-size="13" fill="#334155">Executive Haircut &amp; Beard</text>
+  <text x="610" y="595" font-size="13" fill="#334155">Sarah Jenkins</text>
+  <text x="770" y="595" font-size="13" fill="#334155">Nov 15, 03:45 PM</text>
+  <rect x="925" y="580" width="75" height="22" rx="11" fill="#ecfdf5"/>
+  <text x="937" y="595" font-size="11" font-weight="600" fill="#065f46">Confirmed</text>
+  <text x="1040" y="595" font-size="13" font-weight="600" fill="#0f172a">$65.00</text>
+
+  <!-- Row 5 -->
+  <text x="95" y="645" font-size="13" font-weight="700" fill="#4f46e5">AP-901428</text>
+  <text x="210" y="645" font-size="13" font-weight="600" fill="#0f172a">Chloe Martin</text>
+  <text x="400" y="645" font-size="13" fill="#334155">Hot Stone Therapy</text>
+  <text x="610" y="645" font-size="13" fill="#334155">David Miller</text>
+  <text x="770" y="645" font-size="13" fill="#334155">Nov 16, 11:00 AM</text>
+  <rect x="925" y="630" width="75" height="22" rx="11" fill="#ecfdf5"/>
+  <text x="937" y="645" font-size="11" font-weight="600" fill="#065f46">Confirmed</text>
+  <text x="1040" y="645" font-size="13" font-weight="600" fill="#0f172a">$110.00</text>
+</svg>

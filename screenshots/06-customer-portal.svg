@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" width="1000" height="750" style="background:#f1f5f9; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <rect x="50" y="30" width="900" height="690" rx="14" fill="#ffffff" stroke="#e2e8f0" filter="drop-shadow(0 15px 30px rgba(0,0,0,0.08))"/>
+  
+  <!-- Browser Header -->
+  <rect x="50" y="30" width="900" height="50" rx="14 14 0 0" fill="#f8fafc" stroke="#e2e8f0"/>
+  <circle cx="80" cy="55" r="5" fill="#ef4444"/>
+  <circle cx="96" cy="55" r="5" fill="#f59e0b"/>
+  <circle cx="112" cy="55" r="5" fill="#10b981"/>
+  <rect x="220" y="42" width="560" height="26" rx="6" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="360" y="59" font-size="12" fill="#64748b">🔒 https://yourdomain.com/my-account/appointments</text>
+  
+  <!-- Portal Container -->
+  <rect x="100" y="110" width="800" height="570" rx="12" fill="#ffffff"/>
+  
+  <text x="100" y="150" font-size="22" font-weight="700" fill="#0f172a">Client Appointment Portal</text>
+  <text x="100" y="175" font-size="13" fill="#64748b">Welcome back, Elena Rostova! Manage your scheduled sessions, download receipts, or reschedule.</text>
+  
+  <!-- Appointments Table -->
+  <rect x="100" y="210" width="800" height="420" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  
+  <!-- Table Header -->
+  <rect x="100" y="210" width="800" height="40" rx="8 8 0 0" fill="#f8fafc"/>
+  <line x1="100" y1="250" x2="900" y2="250" stroke="#e2e8f0"/>
+  <text x="120" y="235" font-size="11" font-weight="700" fill="#64748b">REFERENCE</text>
+  <text x="240" y="235" font-size="11" font-weight="700" fill="#64748b">SERVICE</text>
+  <text x="440" y="235" font-size="11" font-weight="700" fill="#64748b">SPECIALIST</text>
+  <text x="580" y="235" font-size="11" font-weight="700" fill="#64748b">DATE &amp; TIME</text>
+  <text x="720" y="235" font-size="11" font-weight="700" fill="#64748b">STATUS</text>
+  <text x="810" y="235" font-size="11" font-weight="700" fill="#64748b">ACTIONS</text>
+  
+  <!-- Row 1 -->
+  <line x1="100" y1="310" x2="900" y2="310" stroke="#f1f5f9"/>
+  <text x="120" y="285" font-size="13" font-weight="700" fill="#4f46e5">AP-892415</text>
+  <text x="240" y="285" font-size="13" font-weight="600" fill="#0f172a">Master Executive Haircut</text>
+  <text x="440" y="285" font-size="13" fill="#334155">Sarah Jenkins</text>
+  <text x="580" y="285" font-size="13" fill="#334155">Nov 15, 10:00 AM</text>
+  <rect x="715" y="271" width="70" height="22" rx="11" fill="#ecfdf5"/>
+  <text x="725" y="286" font-size="11" font-weight="600" fill="#065f46">Confirmed</text>
+  <rect x="805" y="270" width="75" height="26" rx="5" fill="#fef2f2" stroke="#fca5a5"/>
+  <text x="825" y="287" font-size="11" font-weight="600" fill="#dc2626">Cancel</text>
+  
+  <!-- Row 2 -->
+  <line x1="100" y1="370" x2="900" y2="370" stroke="#f1f5f9"/>
+  <text x="120" y="345" font-size="13" font-weight="700" fill="#4f46e5">AP-712044</text>
+  <text x="240" y="345" font-size="13" font-weight="600" fill="#0f172a">Deep Tissue Massage</text>
+  <text x="440" y="345" font-size="13" fill="#334155">David Miller</text>
+  <text x="580" y="345" font-size="13" fill="#334155">Nov 28, 02:00 PM</text>
+  <rect x="715" y="331" width="70" height="22" rx="11" fill="#ecfdf5"/>
+  <text x="725" y="346" font-size="11" font-weight="600" fill="#065f46">Confirmed</text>
+  <rect x="805" y="330" width="75" height="26" rx="5" fill="#fef2f2" stroke="#fca5a5"/>
+  <text x="825" y="347" font-size="11" font-weight="600" fill="#dc2626">Cancel</text>
+  
+  <!-- Row 3 (Past Completed) -->
+  <line x1="100" y1="430" x2="900" y2="430" stroke="#f1f5f9"/>
+  <text x="120" y="405" font-size="13" font-weight="700" fill="#64748b">AP-194021</text>
+  <text x="240" y="405" font-size="13" fill="#64748b">Aromatherapy Relaxation</text>
+  <text x="440" y="405" font-size="13" fill="#64748b">David Miller</text>
+  <text x="580" y="405" font-size="13" fill="#64748b">Oct 12, 11:30 AM</text>
+  <rect x="715" y="391" width="70" height="22" rx="11" fill="#f1f5f9"/>
+  <text x="722" y="406" font-size="11" font-weight="600" fill="#475569">Completed</text>
+  <rect x="805" y="390" width="75" height="26" rx="5" fill="#f1f5f9"/>
+  <text x="820" y="407" font-size="11" font-weight="600" fill="#334155">Receipt</text>
+</svg>
