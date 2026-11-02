@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 480" width="840" height="480" style="background:#0f172a; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#31104b"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="840" height="480" fill="url(#bgGrad)"/>
+  
+  <!-- Decorative Glows -->
+  <circle cx="100" cy="80" r="140" fill="#4f46e5" opacity="0.15" filter="blur(60px)"/>
+  <circle cx="760" cy="400" r="180" fill="#ec4899" opacity="0.12" filter="blur(80px)"/>
+
+  <!-- Top Badges -->
+  <rect x="50" y="45" width="135" height="26" rx="13" fill="#1e293b" stroke="#334155"/>
+  <text x="65" y="62" font-size="11" font-weight="700" fill="#38bdf8">WORDPRESS PLUGIN</text>
+
+  <rect x="195" y="45" width="95" height="26" rx="13" fill="#1e293b" stroke="#334155"/>
+  <text x="210" y="62" font-size="11" font-weight="700" fill="#4ade80">★ 5.0 RATED</text>
+
+  <!-- Title & Headline -->
+  <text x="50" y="125" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="-0.5">AppointPro</text>
+  <text x="50" y="165" font-size="19" font-weight="600" fill="#93c5fd">Ultimate Appointment Booking &amp; Scheduling System</text>
+  <text x="50" y="195" font-size="14" fill="#94a3b8">The complete commercial alternative to Bookly PRO for businesses worldwide.</text>
+
+  <!-- Feature Tags / Pills -->
+  <g transform="translate(50, 230)">
+    <rect x="0" y="0" width="165" height="32" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="14" y="20" font-size="12" font-weight="600" fill="#f8fafc">⚡ 8-Step Booking Wizard</text>
+
+    <rect x="175" y="0" width="155" height="32" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="189" y="20" font-size="12" font-weight="600" fill="#f8fafc">💳 Stripe &amp; PayPal v2</text>
+
+    <rect x="340" y="0" width="155" height="32" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="354" y="20" font-size="12" font-weight="600" fill="#f8fafc">📅 2-Way Google Sync</text>
+  </g>
+
+  <g transform="translate(50, 275)">
+    <rect x="0" y="0" width="150" height="32" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="14" y="20" font-size="12" font-weight="600" fill="#f8fafc">🔒 Zero Double-Booking</text>
+
+    <rect x="160" y="0" width="160" height="32" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="174" y="20" font-size="12" font-weight="600" fill="#f8fafc">👥 Staff &amp; Client Portals</text>
+
+    <rect x="330" y="0" width="165" height="32" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="344" y="20" font-size="12" font-weight="600" fill="#f8fafc">🌐 Arabic &amp; RTL Ready</text>
+  </g>
+
+  <!-- Bottom Badges Bar -->
+  <line x1="50" y1="340" x2="500" y2="340" stroke="#334155"/>
+  <text x="50" y="375" font-size="13" font-weight="700" fill="#a5b4fc">COMPATIBILITY:</text>
+  <text x="50" y="405" font-size="13" font-weight="600" fill="#f8fafc">✓ WordPress 6.0 - 6.7   ✓ PHP 8.1 - 8.3   ✓ WooCommerce   ✓ Elementor</text>
+
+  <!-- Right Perspective UI Mockup Card -->
+  <g transform="translate(530, 95)" filter="url(#shadow)">
+    <!-- Main Window Mockup -->
+    <rect x="0" y="0" width="280" height="340" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="280" height="35" rx="14 14 0 0" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="15" cy="18" r="4" fill="#ef4444"/>
+    <circle cx="27" cy="18" r="4" fill="#f59e0b"/>
+    <circle cx="39" cy="18" r="4" fill="#10b981"/>
+    <text x="55" y="22" font-size="11" font-weight="700" fill="#0f172a">AppointPro Dashboard</text>
+
+    <!-- Mini KPI Cards -->
+    <rect x="15" y="48" width="118" height="52" rx="6" fill="#eef2ff"/>
+    <text x="25" y="66" font-size="9" font-weight="700" fill="#4f46e5">BOOKINGS</text>
+    <text x="25" y="88" font-size="18" font-weight="800" fill="#0f172a">1,428</text>
+
+    <rect x="145" y="48" width="118" height="52" rx="6" fill="#ecfdf5"/>
+    <text x="155" y="66" font-size="9" font-weight="700" fill="#10b981">REVENUE</text>
+    <text x="155" y="88" font-size="16" font-weight="800" fill="#0f172a">$48.2k</text>
+
+    <!-- Mini Booking Items -->
+    <rect x="15" y="112" width="250" height="42" rx="6" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="32" cy="133" r="10" fill="#4f46e5"/>
+    <text x="50" y="128" font-size="10" font-weight="700" fill="#0f172a">Elena Rostova</text>
+    <text x="50" y="142" font-size="9" fill="#64748b">Executive Haircut • $45</text>
+    <rect x="205" y="123" width="50" height="18" rx="9" fill="#ecfdf5"/>
+    <text x="213" y="135" font-size="8" font-weight="700" fill="#065f46">Paid</text>
+
+    <rect x="15" y="162" width="250" height="42" rx="6" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="32" cy="183" r="10" fill="#10b981"/>
+    <text x="50" y="178" font-size="10" font-weight="700" fill="#0f172a">Marcus Vance</text>
+    <text x="50" y="192" font-size="9" fill="#64748b">Deep Tissue • $85</text>
+    <rect x="205" y="173" width="50" height="18" rx="9" fill="#ecfdf5"/>
+    <text x="213" y="185" font-size="8" font-weight="700" fill="#065f46">Paid</text>
+
+    <rect x="15" y="212" width="250" height="42" rx="6" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="32" cy="233" r="10" fill="#f59e0b"/>
+    <text x="50" y="228" font-size="10" font-weight="700" fill="#0f172a">Sophie Bennett</text>
+    <text x="50" y="242" font-size="9" fill="#64748b">Facial Therapy • $40</text>
+    <rect x="205" y="223" width="50" height="18" rx="9" fill="#fffbeb"/>
+    <text x="210" y="235" font-size="8" font-weight="700" fill="#92400e">Pending</text>
+
+    <!-- Callout Banner inside Mockup -->
+    <rect x="15" y="268" width="250" height="55" rx="8" fill="url(#btnGrad)"/>
+    <text x="30" y="292" font-size="12" font-weight="700" fill="#ffffff">8-Step Booking Wizard</text>
+    <text x="30" y="308" font-size="9" fill="#e0e7ff">Stripe • PayPal • Offline • Calendars</text>
+  </g>
+</svg>
