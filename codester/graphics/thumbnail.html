@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      background: #4338ca;
+    }
+    svg {
+      display: block;
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+    <defs>
+      <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#4338ca"/>
+        <stop offset="50%" stop-color="#4f46e5"/>
+        <stop offset="100%" stop-color="#7c3aed"/>
+      </linearGradient>
+      <linearGradient id="calHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#312e81"/>
+        <stop offset="100%" stop-color="#3730a3"/>
+      </linearGradient>
+      <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+        <feDropShadow dx="0" dy="8" stdDeviation="6" flood-opacity="0.3"/>
+      </filter>
+    </defs>
+
+    <!-- Edge-to-Edge gradient background covering full 200x200 canvas -->
+    <rect x="0" y="0" width="200" height="200" fill="url(#bgGrad)"/>
+
+    <!-- Calendar Icon Graphic -->
+    <g filter="url(#shadow)">
+      <rect x="36" y="44" width="128" height="118" rx="20" fill="#ffffff"/>
+      <path d="M 36 64 A 20 20 0 0 1 56 44 L 144 44 A 20 20 0 0 1 164 64 L 164 74 L 36 74 Z" fill="url(#calHeader)"/>
+      <rect x="62" y="32" width="11" height="24" rx="5.5" fill="#e0e7ff"/>
+      <rect x="127" y="32" width="11" height="24" rx="5.5" fill="#e0e7ff"/>
+      <circle cx="64" cy="94" r="4.5" fill="#cbd5e1"/>
+      <circle cx="100" cy="94" r="4.5" fill="#cbd5e1"/>
+      <circle cx="136" cy="94" r="4.5" fill="#cbd5e1"/>
+      <circle cx="100" cy="126" r="22" fill="#10b981"/>
+      <path d="M 91 126 L 97 132 L 110 119" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+</body>
+</html>

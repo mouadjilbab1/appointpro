@@ -1,18 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4f46e5"/>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4338ca"/>
+      <stop offset="50%" stop-color="#4f46e5"/>
       <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
+    <linearGradient id="calHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#3730a3"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
   </defs>
-  <rect width="120" height="120" rx="28" fill="url(#grad)"/>
+
+  <!-- Full Bleed Edge-to-Edge Background: EXACT 200x200, ZERO WHITE BORDERS -->
+  <rect x="0" y="0" width="200" height="200" fill="url(#bgGrad)"/>
+
   <!-- Calendar Icon Graphic -->
-  <rect x="26" y="32" width="68" height="62" rx="12" fill="#ffffff" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.15))"/>
-  <path d="M 26 44 A 12 12 0 0 1 38 32 L 82 32 A 12 12 0 0 1 94 44 L 94 48 L 26 48 Z" fill="#4338ca"/>
-  <!-- Binder Rings -->
-  <rect x="42" y="24" width="6" height="14" rx="3" fill="#ffffff"/>
-  <rect x="72" y="24" width="6" height="14" rx="3" fill="#ffffff"/>
-  <!-- Checkmark Badge -->
-  <circle cx="60" cy="68" r="14" fill="#10b981"/>
-  <path d="M 54 68 L 58 72 L 67 63" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g filter="url(#shadow)">
+    <!-- White Calendar Card -->
+    <rect x="36" y="44" width="128" height="118" rx="20" fill="#ffffff"/>
+    
+    <!-- Dark Indigo Header -->
+    <path d="M 36 64 A 20 20 0 0 1 56 44 L 144 44 A 20 20 0 0 1 164 64 L 164 74 L 36 74 Z" fill="url(#calHeader)"/>
+    
+    <!-- Calendar Rings -->
+    <rect x="62" y="32" width="11" height="24" rx="5.5" fill="#e0e7ff"/>
+    <rect x="127" y="32" width="11" height="24" rx="5.5" fill="#e0e7ff"/>
+    
+    <!-- Mini Date Dots -->
+    <circle cx="64" cy="94" r="4.5" fill="#cbd5e1"/>
+    <circle cx="100" cy="94" r="4.5" fill="#cbd5e1"/>
+    <circle cx="136" cy="94" r="4.5" fill="#cbd5e1"/>
+
+    <!-- Green Success Badge -->
+    <circle cx="100" cy="126" r="22" fill="#10b981"/>
+    <path d="M 91 126 L 97 132 L 110 119" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
 </svg>
